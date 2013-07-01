@@ -22,4 +22,13 @@ public partial class _Default : System.Web.UI.Page
         }
         myDivList.InnerHtml += "</ul>";
     }
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+        SqlCommand cmd;
+        SqlConnection con = new SqlConnection("Data Source=localhost;Initial Catalog=Northwind;Persist Security Info=True;User ID=sa;Password=zxcv123!A");
+        con.Open();
+        cmd = new SqlCommand("INSERT INTO employer VALUES('" + usrtxt.Text + "', '" + pwdtxt1.Text + "','" + emcl.Text + "','" + comtxt.Text + "','" + contacttxt.Text + "','" + type + "','" + DropDownList1.SelectedItem + "','" + addtxt1.Text + "','" + count1.SelectedValue + "','" + state1.Text + "','" + city1.Text + "','" + pin1.Text + "','" + phno.Text + "')", con);
+        cmd.ExecuteNonQuery();
+        con.Close();
+    }
 }

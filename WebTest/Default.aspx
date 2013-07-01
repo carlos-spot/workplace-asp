@@ -96,10 +96,14 @@
 </asp:SqlDataSource>
 <h2>
         The Basics of Editing, Inserting, and Deleting</h2>
-        <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" DeleteMethod="DeleteProduct"
+        
+    <h3>Editing, Inserting, and Deleting Data from a FormView
+    <asp:ObjectDataSource 
+            ID="ObjectDataSource1" runat="server" SelectMethod="GetProducts" TypeName="ProductsBLL">
+            <%--ID="ObjectDataSource1" runat="server" DeleteMethod="DeleteProduct"
             InsertMethod="AddProduct" SelectMethod="GetProducts"
             TypeName="ProductsBLL" UpdateMethod="UpdateProduct" 
-        onselecting="ObjectDataSource1_Selecting">
+        >--%>
             <DeleteParameters>
                 <asp:Parameter Name="productID" Type="Int32" />
             </DeleteParameters>
@@ -125,9 +129,9 @@
                 <asp:Parameter Name="unitsOnOrder" Type="Int16" />
                 <asp:Parameter Name="reorderLevel" Type="Int16" />
                 <asp:Parameter Name="discontinued" Type="Boolean" />
-            </InsertParameters>
-        </asp:ObjectDataSource>
-    <h3>Editing, Inserting, and Deleting Data from a FormView</h3>
+            </InsertParameters>        
+    </asp:ObjectDataSource>
+    </h3>
     <p>
         <asp:FormView ID="FormView1" runat="server" DataKeyNames="ProductID" DataSourceID="ObjectDataSource1" AllowPaging="True">
             <EditItemTemplate>
