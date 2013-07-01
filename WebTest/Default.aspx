@@ -5,7 +5,7 @@
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
     <p>
-        <%--Grid que lista todos los productos y muestra un boton de borrar--%>
+        <%--Definicion del SQLDataSource que va a tener el GridView2 --%>
         <asp:SqlDataSource ID="ProductsDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:NorthwindConnectionString %>"
             SelectCommand="SELECT [ProductID], [ProductName], [UnitPrice] FROM [Products]"
             DeleteCommand="DELETE FROM Products WHERE ProductID = @ProductID">
@@ -13,6 +13,7 @@
                 <asp:Parameter Name="ProductID" />
             </DeleteParameters>
         </asp:SqlDataSource>
+        <%--Grid que lista todos los productos y muestra un boton de borrar--%>
         <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" DataKeyNames="ProductID" DataSourceID="ProductsDataSource" EnableViewState="False">
             <Columns>
                 <asp:CommandField ShowDeleteButton="True" />
@@ -23,7 +24,8 @@
         </asp:GridView>
     </p>
     <p>
-        <%--Tabla que muestra la informacion de un producto a la vez y permite actualizar y registrar uno nuevo--%>
+        
+        <%--Definicion del SQLDataSource que va a tener el DetailsView 'ManageProductsDataSource' --%>
         <asp:SqlDataSource ID="ManageProductsDataSource" runat="server" 
             ConnectionString="<%$ ConnectionStrings:NorthwindConnectionString %>"
             DeleteCommand="DELETE FROM [Products] WHERE [ProductID] = @ProductID" 
@@ -45,6 +47,8 @@
                 <asp:Parameter Name="Discontinued" Type="Boolean" />
             </InsertParameters>
         </asp:SqlDataSource>
+
+        <%--DetailsView que muestra la informacion de un producto a la vez y permite actualizar y registrar uno nuevo--%>
         <asp:DetailsView ID="ManageProducts" runat="server" AllowPaging="True" AutoGenerateRows="False" DataKeyNames="ProductID" DataSourceID="ManageProductsDataSource" EnableViewState="False">
             <Fields>
                 <asp:BoundField DataField="ProductID" HeaderText="ProductID" InsertVisible="False" ReadOnly="True" SortExpression="ProductID" />
