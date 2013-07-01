@@ -1,0 +1,65 @@
+﻿<%@ Master Language="VB" CodeFile="IniciarSesion.master.vb" Inherits="IniciarSesion" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head id="Head1" runat="server"> <%-- Head de la página--%>
+    <title>Survey System - Iniciar sesi&oacute;n</title>
+    <link rel="stylesheet" type="text/css" href="../../css/EstiloMP.css" media="screen" />
+    <link href="../../css/ordenarDivMP.css" rel="stylesheet" type="text/css" />
+    <link rel= "shortcut icon" href="../../imagenes/utec.ico" />
+    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            color: #000000;
+            font-family: "Century Gothic";
+            font-size: xx-large;
+        }
+    </style>
+    <script language="javascript" type="text/javascript">
+        function seleccionarTexto() {
+            frmIniciarSesion.txtCorreo.select();
+        }
+    </script> 
+</head>
+<body style=" margin-left:auto;  margin-right:auto;">
+    <form id="frmIniciarSesion" runat="server"><%-- Inicia el formulario--%>
+        <div id="wrap"> <%-- Inicia el Div Wrap, el que "Envuelve todo"--%>
+             <%-- Inicia el Div Header, el que tiene el encabezado--%>
+            <div id="header"> 
+            </div>
+            <%--Inicia el Div menu, el que contiene el menu de la parte superior--%>
+            <div id="menuCabezera";>
+                <div style=" float:left; height: 58px; width: 719px;">
+                </div>
+                <div style=" float:right; width: 293px; margin-top: 73px; height: 27px; margin-bottom: 0px;">
+                <p style="font-size:large; margin-left: 0px; width: 167px;"><b>Survey System</b></p>
+                </div>
+                <div style=" float:left; height: 41px; width: 719px;">
+                <h1 style="font-family: Times New Roman, Times, serif; color: #000066; width: 442px; height: 39px; margin-top: 0px; margin-left: 52px; margin-bottom: 0px;">
+                    Universidad Tecnológica S.A
+                </h1>
+                </div>
+            </div>
+            <div id="contenedor" >  
+
+                <asp:ContentPlaceHolder ID="ContenidoIniciarSesion" runat="server">
+                </asp:ContentPlaceHolder>
+                
+            </div> <%-- Termina el Div content, el que contiene el div de las funcionalidades y el contenedor de las páginas--%> 
+
+            <div id="bottom" style="font-size: 12px"> <%-- Inicia el Div bottom, el que esta antes del footer para mantener un espacio--%>
+            <%-- Contenido--%>
+            </div><%-- Termina el Div bottom, el que esta antes del footer para mantener un espacio--%>
+
+            <div id="footer"><%-- Inicia el Div footer, el que contienen el pie de página--%>
+                >>© Copyright 2010 Universidad Tecnológica - Survey System | Diseño por: Nexus Developmet Corp<<
+            </div><%-- Termina el Div footer, el que contienen el pie de página--%>
+
+        </div><%-- Termina el Div Wrap, el que "Envuelve todo"--%>
+    </form><%-- Termina el formulario--%>
+</body>
+</html>

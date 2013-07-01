@@ -1,0 +1,192 @@
+﻿<%@ Master Language="VB" CodeFile="PrincipalProfesor.master.vb" Inherits="Pages_Rol_2___Profesor_PrincipalProfesor" %>
+<%@ Register assembly="obout_EasyMenu_Pro" namespace="OboutInc.EasyMenu_Pro" tagprefix="oem" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<%-- Head de la página--%>
+<head id="Head1" runat="server"> 
+    <title>Survey System</title>
+    <link rel="stylesheet" type="text/css" href="../../css/EstiloMP.css" media="screen" />
+    <link href="../../css/ordenarDivMP.css" rel="stylesheet" type="text/css" />
+    <link rel= "shortcut icon" href="../../imagenes/utec.ico" />
+     <script language="javascript" type="text/javascript">
+        function llamarMetodoDelServer(pmetodo) {
+            __doPostBack(pmetodo, ""); 
+        }
+    </script> 
+</head>
+<%-- Body de la página--%>
+<body style=" margin-left:auto; margin-right:auto;">
+    <form id="aspnetForm" runat="server" style=" margin-left:auto; margin-right:auto;">
+    <%-- Inicia el formulario--%>
+        <%-- Inicia el Div Wrap, el que "Envuelve todo"--%>
+        <div id="wrap"> 
+           <%-- Inicia el Div Header, el que tiene el encabezado--%>
+            <div id="header"> 
+            </div>
+            <%--Inicia el Div menu, el que contiene el menu de la parte superior--%>
+            <div id="menuCabezera";>
+                <div style=" float:left; height: 37px; width: 718px;">
+                </div>
+                <div style=" float:right; width: 141px; margin-top: 43px; height: 27px; margin-right: 155px;">
+                    <p style="font-size:large; margin-left: 0px; width: 143px; margin-top: 0px;"><b>Survey System</b></p>
+                </div>
+                <div style=" float:left; height: 41px; width: 719px;">
+                <h1 style="font-family: Times New Roman, Times, serif; color: #000066; width: 442px; height: 39px; margin-top: 0px; margin-left: 52px; margin-bottom: 0px;">
+                    Universidad Tecnológica S.A
+                </h1>
+                </div>
+                <div style=" float:right; width: 118px; margin-top: 14px; height: 48px; margin-bottom: 0px; margin-right: 165px;">
+                    <asp:Button ID="btnCerrarSesion" runat="server" Height="25px" 
+                        style="margin-top: 0px" Text="Cerrar Sesión" Width="120px" />
+                </div>
+                <div style=" float:left; height: 46px; width: 665px; margin-left: 50px;">
+                    <asp:Label ID="lblSaludo" runat="server" Font-Bold="True" Font-Size="14pt" 
+                    ForeColor="White" Text="Sesión iniciada para: "></asp:Label>
+                </div>
+            </div>
+            <%-- Termina el Div menu--%>
+            <%-- Inicia el Div content, el que contiene el div de las funcionalidades y el contenedor de las páginas--%> 
+            <div id="contenedor">
+                 <div id="menuDesplegable">
+                <oem:EasyMenu id="MenuDesplegablePrincipal" runat="server" ShowEvent="Always" StyleFolder="~/css/MenuDesplegableTransparent" Position="Horizontal" CSSMenu="ParentMenu" CSSMenuItemContainer="ParentItemContainer" Width="981" EventsScriptPath="" IconsFolder="">
+					<CSSClassesCollection>
+						<oem:CSSClasses ObjectType="OboutInc.EasyMenu_Pro.MenuItem" ComponentSubMenuCellOver="ParentItemSubMenuCellOver"
+							ComponentContentCell="ParentItemContentCell" Component="ParentItem" ComponentSubMenuCell="ParentItemSubMenuCell"
+							ComponentIconCellOver="ParentItemIconCellOver" ComponentIconCell="ParentItemIconCell"
+							ComponentOver="ParentItemOver" ComponentContentCellOver="ParentItemContentCellOver"></oem:CSSClasses>
+						<oem:CSSClasses ObjectType="OboutInc.EasyMenu_Pro.MenuSeparator" ComponentSubMenuCellOver="ParentSeparatorSubMenuCellOver"
+							ComponentContentCell="ParentSeparatorContentCell" Component="ParentSeparator"
+							ComponentSubMenuCell="ParentSeparatorSubMenuCell" ComponentIconCellOver="ParentSeparatorIconCellOver"
+							ComponentIconCell="ParentSeparatorIconCell" ComponentOver="ParentSeparatorOver"
+							ComponentContentCellOver="ParentSeparatorContentCellOver"></oem:CSSClasses>
+					</CSSClassesCollection>
+					<Components>
+						<oem:MenuItem InnerHtml="Home" ID="item1"></oem:MenuItem><oem:MenuSeparator InnerHtml="&nbsp;" ID="MenuSeparator1"></oem:MenuSeparator>
+						<oem:MenuItem InnerHtml="Confección" ID="item2" ></oem:MenuItem><oem:MenuSeparator InnerHtml="&nbsp;" ID="MenuSeparator2"></oem:MenuSeparator>
+						<oem:MenuItem InnerHtml="Análisis" ID="item3" ></oem:MenuItem><oem:MenuSeparator InnerHtml="&nbsp;" ID="MenuSeparator3"></oem:MenuSeparator>
+						<oem:MenuItem InnerHtml="Configuración" ID="item4"></oem:MenuItem><oem:MenuSeparator InnerHtml="&nbsp;" ID="MenuSeparator4"></oem:MenuSeparator>
+						<oem:MenuItem InnerHtml="Gestión de archivos" ID="item5"></oem:MenuItem><oem:MenuSeparator InnerHtml="&nbsp;" ID="MenuSeparator5"></oem:MenuSeparator>
+                        <oem:MenuItem InnerHtml="Reportes" ID="item6"></oem:MenuItem>
+					</Components>
+                    <CommonSubMenuProperties StyleFolder="" OffsetHorizontal="0" OffsetVertical="0" ZIndex="0" UseIcons="False" IconsPosition="Left" Align="Cursor" AlignMenuCorner="TopRight" Position="Vertical" ShowEvent="MouseOver" Width="130px" DropdownIncrement="10" DropInterval="10" KeepOpen="False" RepeatColumns="1"></CommonSubMenuProperties>
+				</oem:EasyMenu>
+				
+				<%--SubMenu para HOME--%>
+				<oem:easymenu id="EasyMenu1" runat="server" StyleFolder="styles/transparent" Width="160" UseIcons="false" AttachTo="item1" ShowEvent="MouseOver" Align="Under" OffsetVertical="-4">
+					<Components>
+						<oem:MenuItem InnerHtml="Principal" ID="menuitem1" Url="~/Pages/Rol 2 - Profesor/PrincipalProfesor.aspx"></oem:MenuItem>
+						<oem:MenuItem InnerHtml="Responder encuesta" ID="menuItem3" 
+                            Url="~/Pages/Portal/ValidarClaveAcceso.aspx"></oem:MenuItem>
+					</Components>
+                    <CSSClassesCollection>
+                    <oem:CSSClasses ObjectType="OboutInc.EasyMenu_Pro.MenuItem" Component="easyMenuItem" ComponentOver="easyMenuItemOver" ComponentContentCell="easyMenuItemContentCell" ComponentContentCellOver="easyMenuItemContentCellOver" ComponentLeftRoundCornerCell="easyMenuItemLeftRoundCornerCell" ComponentLeftRoundCornerCellOver="easyMenuItemLeftRoundCornerCellOver" ComponentRightRoundCornerCell="easyMenuItemRightRoundCornerCell" ComponentRightRoundCornerCellOver="easyMenuItemRightRoundCornerCellOver" ComponentIconCell="easyMenuItemIconCell" ComponentIconCellOver="easyMenuItemIconCellOver" ComponentSubMenuCell="easyMenuItemSubMenuCell" ComponentSubMenuCellOver="easyMenuItemSubMenuCellOver"></oem:CSSClasses>
+                    </CSSClassesCollection>
+                    <CommonSubMenuProperties StyleFolder="" OffsetHorizontal="0" OffsetVertical="0" ZIndex="0" UseIcons="False" IconsPosition="Left" Align="Cursor" AlignMenuCorner="TopRight" Position="Vertical" ShowEvent="MouseOver" Width="130px" DropdownIncrement="10" DropInterval="10" KeepOpen="False" RepeatColumns="1"></CommonSubMenuProperties>
+				</oem:easymenu>
+				
+				<%--SubMenu para Confección--%>
+				<oem:easymenu id="EasyMenu2" runat="server" StyleFolder="styles/transparent" Width="185" UseIcons="false" AttachTo="item2" ShowEvent="MouseOver" Align="Under" OffsetVertical="-4">
+					<Components>
+						<oem:MenuItem InnerHtml="Confección de encuestas" ID="menuitem4" 
+                            Url="~/Pages/Rol 2 - Profesor/Confeccion/BuscarEncuesta.aspx" ></oem:MenuItem>
+					</Components>
+                    <CSSClassesCollection>
+                    <oem:CSSClasses ObjectType="OboutInc.EasyMenu_Pro.MenuItem" Component="easyMenuItem" ComponentOver="easyMenuItemOver" ComponentContentCell="easyMenuItemContentCell" ComponentContentCellOver="easyMenuItemContentCellOver" ComponentLeftRoundCornerCell="easyMenuItemLeftRoundCornerCell" ComponentLeftRoundCornerCellOver="easyMenuItemLeftRoundCornerCellOver" ComponentRightRoundCornerCell="easyMenuItemRightRoundCornerCell" ComponentRightRoundCornerCellOver="easyMenuItemRightRoundCornerCellOver" ComponentIconCell="easyMenuItemIconCell" ComponentIconCellOver="easyMenuItemIconCellOver" ComponentSubMenuCell="easyMenuItemSubMenuCell" ComponentSubMenuCellOver="easyMenuItemSubMenuCellOver"></oem:CSSClasses>
+                    </CSSClassesCollection>
+                    <CommonSubMenuProperties StyleFolder="" OffsetHorizontal="0" OffsetVertical="0" ZIndex="0" UseIcons="False" IconsPosition="Left" Align="Cursor" AlignMenuCorner="TopRight" Position="Vertical" ShowEvent="MouseOver" Width="130px" DropdownIncrement="10" DropInterval="10" KeepOpen="False" RepeatColumns="1"></CommonSubMenuProperties>
+				</oem:easymenu>
+				
+				<%--SubMenu para Análisis--%>
+				<oem:easymenu id="EasyMenu3" runat="server" StyleFolder="styles/transparent" Width="190" UseIcons="false" AttachTo="item3" ShowEvent="MouseOver" Align="Under" OffsetVertical="-4">
+					<Components>
+						<oem:MenuItem InnerHtml="Analizar encuesta" ID="menuItem9" 
+                            Url="~/pages/Rol 2 - Profesor/Analisis/Analisis.aspx" ></oem:MenuItem>
+					    <oem:MenuItem ID="MenuItem2" runat="server" 
+                            InnerHtml="Ver información estadistica" 
+                            Url="~/Pages/Rol 2 - Profesor/Analisis/InfoEstadistica.aspx">
+                        </oem:MenuItem>
+					</Components>
+                    <CSSClassesCollection>
+                    <oem:CSSClasses ObjectType="OboutInc.EasyMenu_Pro.MenuItem" Component="easyMenuItem" ComponentOver="easyMenuItemOver" ComponentContentCell="easyMenuItemContentCell" ComponentContentCellOver="easyMenuItemContentCellOver" ComponentLeftRoundCornerCell="easyMenuItemLeftRoundCornerCell" ComponentLeftRoundCornerCellOver="easyMenuItemLeftRoundCornerCellOver" ComponentRightRoundCornerCell="easyMenuItemRightRoundCornerCell" ComponentRightRoundCornerCellOver="easyMenuItemRightRoundCornerCellOver" ComponentIconCell="easyMenuItemIconCell" ComponentIconCellOver="easyMenuItemIconCellOver" ComponentSubMenuCell="easyMenuItemSubMenuCell" ComponentSubMenuCellOver="easyMenuItemSubMenuCellOver"></oem:CSSClasses>
+                    </CSSClassesCollection>
+                    <CommonSubMenuProperties StyleFolder="" OffsetHorizontal="0" OffsetVertical="0" ZIndex="0" UseIcons="False" IconsPosition="Left" Align="Cursor" AlignMenuCorner="TopRight" Position="Vertical" ShowEvent="MouseOver" Width="130px" DropdownIncrement="10" DropInterval="10" KeepOpen="False" RepeatColumns="1"></CommonSubMenuProperties>
+				</oem:easymenu>
+				
+				<%--SubMenu para Configuración--%>
+				<oem:easymenu id="EasyMenu4" runat="server" StyleFolder="styles/transparent" Width="230" UseIcons="false" AttachTo="item4" ShowEvent="MouseOver" Align="Under" OffsetVertical="-4">
+					<Components>
+			            <oem:MenuItem InnerHtml="Pila de preguntas" ID="menuItem10" 
+                            Url="~/Pages/Rol 2 - Profesor/Analisis/PilaPreguntas.aspx"></oem:MenuItem>
+						<oem:MenuItem InnerHtml="Temas" ID="menuItem13" 
+                            Url="~/Pages/Rol 2 - Profesor/Configuracion/HomeTemaP.aspx"></oem:MenuItem>
+						<oem:MenuItem InnerHtml="Productos" ID="menuItem14" 
+                            Url="~/Pages/Rol 2 - Profesor/Configuracion/HomeProductoP.aspx"></oem:MenuItem>
+			        </Components>
+                    <CSSClassesCollection>
+                    <oem:CSSClasses ObjectType="OboutInc.EasyMenu_Pro.MenuItem" Component="easyMenuItem" ComponentOver="easyMenuItemOver" ComponentContentCell="easyMenuItemContentCell" ComponentContentCellOver="easyMenuItemContentCellOver" ComponentLeftRoundCornerCell="easyMenuItemLeftRoundCornerCell" ComponentLeftRoundCornerCellOver="easyMenuItemLeftRoundCornerCellOver" ComponentRightRoundCornerCell="easyMenuItemRightRoundCornerCell" ComponentRightRoundCornerCellOver="easyMenuItemRightRoundCornerCellOver" ComponentIconCell="easyMenuItemIconCell" ComponentIconCellOver="easyMenuItemIconCellOver" ComponentSubMenuCell="easyMenuItemSubMenuCell" ComponentSubMenuCellOver="easyMenuItemSubMenuCellOver"></oem:CSSClasses>
+                    </CSSClassesCollection>
+                    <CommonSubMenuProperties StyleFolder="" OffsetHorizontal="0" OffsetVertical="0" ZIndex="0" UseIcons="False" IconsPosition="Left" Align="Cursor" AlignMenuCorner="TopRight" Position="Vertical" ShowEvent="MouseOver" Width="130px" DropdownIncrement="10" DropInterval="10" KeepOpen="False" RepeatColumns="1"></CommonSubMenuProperties>
+				</oem:easymenu>
+				
+				<%--SubMenu para Descargas--%>
+				<oem:easymenu id="EasyMenu5" runat="server" StyleFolder="styles/transparent" Width="290" UseIcons="false" AttachTo="item5" ShowEvent="MouseOver" Align="Under" OffsetVertical="-4">
+					<Components>
+						<oem:MenuItem InnerHtml="Subir o bajar archivos" ID="menuitem15" 
+                            Url="~/pages/Rol 2 - Profesor/Analisis/GestionArchivos.aspx"></oem:MenuItem>
+					</Components>
+                    <CSSClassesCollection>
+                    <oem:CSSClasses ObjectType="OboutInc.EasyMenu_Pro.MenuItem" Component="easyMenuItem" ComponentOver="easyMenuItemOver" ComponentContentCell="easyMenuItemContentCell" ComponentContentCellOver="easyMenuItemContentCellOver" ComponentLeftRoundCornerCell="easyMenuItemLeftRoundCornerCell" ComponentLeftRoundCornerCellOver="easyMenuItemLeftRoundCornerCellOver" ComponentRightRoundCornerCell="easyMenuItemRightRoundCornerCell" ComponentRightRoundCornerCellOver="easyMenuItemRightRoundCornerCellOver" ComponentIconCell="easyMenuItemIconCell" ComponentIconCellOver="easyMenuItemIconCellOver" ComponentSubMenuCell="easyMenuItemSubMenuCell" ComponentSubMenuCellOver="easyMenuItemSubMenuCellOver"></oem:CSSClasses>
+                    </CSSClassesCollection>
+                    <CommonSubMenuProperties StyleFolder="" OffsetHorizontal="0" OffsetVertical="0" ZIndex="0" UseIcons="False" IconsPosition="Left" Align="Cursor" AlignMenuCorner="TopRight" Position="Vertical" ShowEvent="MouseOver" Width="130px" DropdownIncrement="10" DropInterval="10" KeepOpen="False" RepeatColumns="1"></CommonSubMenuProperties>
+				</oem:easymenu>
+				
+				<%--SubMenu para Reportes--%>
+				<oem:easymenu id="EasyMenu6" runat="server" StyleFolder="styles/transparent" Width="260" UseIcons="false" AttachTo="item6" ShowEvent="MouseOver" Align="Under" OffsetVertical="-4">
+					<Components>
+					    <oem:MenuItem ID="menuitem17" runat="server" 
+                            InnerHtml="Comparación de encuestas" 
+                            Url="~/Pages/Rol 2 - Profesor/ReportesP/ComparacionEncuestasP.aspx"></oem:MenuItem>
+					    <oem:MenuItem ID="menuItem18" runat="server" 
+                            InnerHtml="Respuestas reales vs esperadas" 
+                            Url="~/Pages/Rol 2 - Profesor/ReportesP/RepReavsEspeP.aspx"></oem:MenuItem>
+                        <oem:MenuItem ID="menuItem19" runat="server" InnerHtml="Respuestas tabuladas" 
+                            Url="~/Pages/Rol 2 - Profesor/ReportesP/RepTabuladasListaP.aspx"></oem:MenuItem>
+					    <oem:MenuItem ID="menuItem20" runat="server" InnerHtml="Gráfico respuestas tabuladas" Url="~/Pages/Rol 2 - Profesor/ReportesP/ReportePorcentualRespTabuladasP.aspx"></oem:MenuItem>
+					    <oem:MenuItem ID="MenuItem99" runat="server" 
+                            InnerHtml="Cantidad de encuestas por tema" 
+                            Url="~/Pages/Rol 2 - Profesor/ReportesP/ConsultarCantidadEncuestaPorTemaYPeriodoDadoP.aspx">
+                        </oem:MenuItem>
+                        <oem:MenuItem ID="MenuItem6" runat="server" 
+                            InnerHtml="Cantidad de encuestas por usuario" 
+                            Url="~/Pages/Rol 2 - Profesor/ReportesP/ConsultarCantidadEncuestasRealizadasUsuarioP.aspx">
+                        </oem:MenuItem>
+					</Components>
+                    <CSSClassesCollection>
+                    <oem:CSSClasses ObjectType="OboutInc.EasyMenu_Pro.MenuItem" Component="easyMenuItem" ComponentOver="easyMenuItemOver" ComponentContentCell="easyMenuItemContentCell" ComponentContentCellOver="easyMenuItemContentCellOver" ComponentLeftRoundCornerCell="easyMenuItemLeftRoundCornerCell" ComponentLeftRoundCornerCellOver="easyMenuItemLeftRoundCornerCellOver" ComponentRightRoundCornerCell="easyMenuItemRightRoundCornerCell" ComponentRightRoundCornerCellOver="easyMenuItemRightRoundCornerCellOver" ComponentIconCell="easyMenuItemIconCell" ComponentIconCellOver="easyMenuItemIconCellOver" ComponentSubMenuCell="easyMenuItemSubMenuCell" ComponentSubMenuCellOver="easyMenuItemSubMenuCellOver"></oem:CSSClasses>
+                    </CSSClassesCollection>
+                    <CommonSubMenuProperties StyleFolder="" OffsetHorizontal="0" OffsetVertical="0" ZIndex="0" UseIcons="False" IconsPosition="Left" Align="Cursor" AlignMenuCorner="TopRight" Position="Vertical" ShowEvent="MouseOver" Width="130px" DropdownIncrement="10" DropInterval="10" KeepOpen="False" RepeatColumns="1"></CommonSubMenuProperties>
+				</oem:easymenu>
+				</div>
+                <div id="principal">
+                    <asp:ContentPlaceHolder ID="ContentPrincipal" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+            <%-- Termina el Div content--%> 
+            <%-- Inicia el Div bottom, el que esta antes del footer para mantener un espacio--%>
+            <div id="bottom"> 
+            </div>
+            <%-- Termina el Div bottom--%>
+            <%-- Inicia el Div footer, el que contienen el pie de página--%>
+            <div id="footer">
+                >>© Copyright 2010 Universidad Tecnológica - Survey System | Diseño por: Nexus Developmet Corp<<
+             </div>
+            <%-- Termina el Div footer--%>
+        </div>
+        <%-- Termina el Div Wrap, el que "Envuelve todo"--%>
+    <%-- Termina el formulario--%>
+    </form>
+    </body>
+</html>

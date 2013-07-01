@@ -1,0 +1,53 @@
+﻿
+.resultadoPregunta
+{
+    border-width: thin; 
+    border-color: #009900; 
+    background-color: #EEF7FE; 
+    border-top-style: groove; 
+    border-bottom-style: groove;
+}
+.textoPregunta
+{
+   border-width: thin;
+   Width:400px; 
+   border-right-style: groove;
+}
+.textoOpcion
+{
+   border-style: groove none groove groove; 
+   border-width: thin; 
+   Width:170px;
+}
+.valorOpcion
+{
+   border-style: groove none groove none; 
+   border-width: thin; 
+   Width:80px;
+}
+.style1
+{
+    Width: 170px;
+    height: 27px;
+    border-left-style: groove;
+    border-left-width: thin;
+    border-right-style: none;
+    border-right-width: thin;
+    border-top-style: groove;
+    border-top-width: thin;
+    border-bottom-style: groove;
+    border-bottom-width: thin;
+}
+.style2
+{
+    Width: 80px;
+    height: 27px;
+    border-left-style: none;
+    border-left-width: thin;
+    border-right-style: none;
+    border-right-width: thin;
+    border-top-style: groove;
+    border-top-width: thin;
+    border-bottom-style: groove;
+    border-bottom-width: thin;
+}

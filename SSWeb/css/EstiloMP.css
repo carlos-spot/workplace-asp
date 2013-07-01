@@ -1,0 +1,195 @@
+/*
+Hoja de Estilo (CSS)
+Creada por: Carlos Dominguez Lara
+Rol: Soporte
+Empresa: Nexus Development
+Fecha de Creación: 11 de Noviembre del 2010
+Fecha de Modificación: 11 de Noviembre del 2010
+*/
+
+/*Estilo para el cuerpo de la página*/
+
+body {
+	background-color:#dfdfdf;
+	font-family: Arial, Century Gothic, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 18px;
+	color: #333333;
+}
+h4
+{
+	font-family: Arial;
+	font-size: 13pt;
+	color: #333333;
+}
+
+p 
+{
+	font-size:15px; 
+	text-align:center; 
+	line-height: 25px;
+}
+
+a{
+	color: #33BFEB; 
+	text-decoration: none; 
+}
+a:hover  
+{
+	/*text-decoration: underline; */
+	color : #000; 
+}
+
+/*Div principal.*/
+#wrap {
+	width: 1087px;
+	height: 811px;
+	margin:  10px auto;
+}
+
+/*Estilo para el header*/
+#header {
+	height: 40px;
+	text-align: left;
+	width: 994px;
+    margin-left: 41px;
+}
+
+#header h1 {
+	padding: 0 0 0 20px;
+	font-size: 22px;
+	letter-spacing: -2px;
+	color: #333399;
+	text-decoration: none;
+	margin-left: 32px;
+    height: 19px;
+    margin-bottom: 13px;
+}
+#header h1:hover {
+	text-decoration: none;
+	color: #000;
+}
+#header h2 {
+	padding-left: 21px;
+	font-size: 16px;
+	color: #666;
+	font-weight: 100;
+}
+
+/*Estilo para el div top*/
+#top {
+	background: #fff url(imagenes/top.png) no-repeat;
+	padding: 5px 0;
+}
+
+/*Estilo
+
+/*Estilo para el div menu*/
+#menuCabezera {
+	height: 61px;
+	line-height: 50px;
+	background: #ffffff url('../imagenes/menu.png') no-repeat;
+	font-size: 15px;
+	text-align: left;
+	width: 1024px;
+	margin-right: 0px;
+    margin-left: 46px;
+    height: 135px;
+}
+
+/*div content*/
+#content {
+	padding: 10px 10px;
+	width: 982px;
+	height: 536px;
+	background: #fff url('../imagenes/content.png') repeat-y;
+	margin-left: 40px;
+    margin-top: 0px;
+}
+
+/*Estilo para el div rigth*/
+.right {
+	float:  left;
+	width: 660px;
+	height: 430px;
+	padding-right: 10px;
+	padding-left: 10px;
+	text-align: center;
+}
+.right h2 {
+	color: #B4241B;
+	font-size: 20px;
+	letter-spacing: -2px;
+	font-weight: 100;
+	padding : 10px 0 15px 0;
+}
+
+/*Estilo para el div left*/
+.left 
+{
+	text-align: center;
+	float: left;
+	width: 150px;
+	height: 430px;
+	padding: 10px;
+	border-right: 1px solid #aaa;
+}
+.left h2 {
+	font-size: 14px;
+	color: #333;
+	padding: 5px 0 1px 10px;
+}
+	.left ul {
+	list-style-type: none;
+	padding:  5px 0 0px 5px;
+}
+.left ul li {
+	padding: 5px  20px;
+	background: transparent url('../imagenes/apple.gif') no-repeat;
+}
+
+.left ul li a {
+	display: block;
+	color: #444;
+	font-size: 14px;
+}
+.left ul li a:hover {
+	color: #33BFEB;
+	font-size: 13px;
+	font-style: italic;
+}
+
+/*Estilo para el div bottom*/
+#bottom {
+	background: #fff url('../imagenes/bottom.png') no-repeat;
+	padding: 10px 0;
+    margin-left: 47px;
+    width: 1023px;
+	height: 2px;
+	margin-top: 0px;
+}
+
+/*Estilo para el div footer*/
+#footer 
+{
+	text-align: center;
+	color: #666;
+	font-size: 12px;
+}
+
+/*Estilo para el menu desplegable*/
+#menuDesplegable
+ {
+     height: 37px;
+     text-align: left;
+     width: 981px;
+     margin-left: 23px;
+ }
+ 
+ /*Estilo para el fondo al confirmar*/
+ .modalBackgroud
+{ 
+    background-color:Gray;
+    filter: alpha(opacity=50); 
+    opacity: .5
+}

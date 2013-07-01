@@ -1,0 +1,61 @@
+﻿#contenedor{
+    margin: 0px auto 0px 47px;
+    background: #fff url('../imagenes/content.png') repeat-y;
+    width: 1023px;
+    height: 631px;
+}
+#cabezera{
+    background-color:#3c6;
+    text-align:center;
+    vertical-align:middle;
+}
+#menuDesplegable
+{
+    height: 21px;
+    width: 983px;
+    margin-left: 21px;
+    margin-top: 0px;
+}
+#menuIzquierda{
+    float:left;
+    background-color: #D2FFF4;
+    margin-left: 14px;
+}
+#menu1{
+    background-color:#9c9;
+}
+#menu2{
+    background-color:#6c6;
+}
+#principal{
+    float:right;
+    height: 601px; 
+    width: 972px; 
+    margin-top: 0px; 
+    background-color: #D3DCE1; 
+    margin-right: 24px;
+}
+#tabla{
+    background-color: #F4FFFB; 
+}
+#pie{
+    clear:both;
+    background-color:#3c6;
+}
+div#pie img{
+    /* Utlilizo una img de referencia y un vertical-align:middle para centrar (en vertical)el texto en el div.*/
+    vertical-align:middle;
+}
+
+/* Redondea los div*/
+div#nifty{ margin: 13px 0 0 112px ;
+background: #F0EDE0;
+    width: 549px;
+}
+b.rtop, b.rbottom{display:block;background: #FFF}
+b.rtop b, b.rbottom b{display:block;height: 1px;
+overflow: hidden; background: #F0EDE0}
+b.r1{margin: 0 5px}
+b.r2{margin: 0 3px}
+b.r3{margin: 0 2px}
+b.rtop b.r4, b.rbottom b.r4{margin: 0 1px;height: 2px}

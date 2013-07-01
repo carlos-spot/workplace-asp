@@ -1,0 +1,3131 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SSLogica
+</name>
+</assembly>
+<members>
+<member name="M:SSLogica.Encuesta.#ctor(System.Int32,System.String,System.DateTime,System.DateTime,System.Int32,System.Int32,System.Double,System.Int32,System.Boolean,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+	<summary>
+ COnstructor para levantar una encuesta con código.
+ </summary>
+	<param name="pcodigo">Codigo</param>
+	<param name="pnombre">Nombre</param>
+	<param name="pfechaInicio">Fecha de inicio</param>
+	<param name="pfechaFin">Fecha de fin</param>
+	<param name="ppoblacion">Población</param>
+	<param name="pmuestraOriginal">Muestra original</param>
+	<param name="pmargenErrorOriginal">Margen de error original</param>
+	<param name="pdiasParaAnalisis">Cantidad de días para análisis</param>
+	<param name="pvalida">Encuesta valida</param>
+	<param name="pproposito">Propósito</param>
+	<param name="pidTema">ID del tema</param>
+	<param name="pidParametrizador">ID del parametrizador</param>
+	<param name="pidEncargadoConfeccion">ID del encargado de confección</param>
+	<param name="pidEncargadoSeguimiento">ID del encargado de seguimiento</param>
+	<param name="pidEncargadoAnalisis">ID del encargado de análisis</param>
+	<param name="pidPeriodo">ID del periodo</param>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 20-10-2010
+ Última modificación: 20-10-2010
+ </remarks>
+</member><member name="M:SSLogica.Encuesta.#ctor(System.String,System.DateTime,System.DateTime,System.String,System.Int32,System.Int32,System.Double,System.String)">
+	<summary>
+ COnstructor para listar los datos básicos de la encuesta.
+ </summary>
+	<param name="pnombre">Nombre</param>
+	<param name="pfechaInicio">Fecha de inicio</param>
+	<param name="pfechaFin">Fecha de fin</param>
+	<param name="ptema">Tema</param>
+	<param name="ppoblacion">Población</param>
+	<param name="pmuestraOriginal">Muestra original</param>
+	<param name="pmargenErrorOriginal">Margen de error original</param>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 04-10-2010
+ Última modificación: 04-10-2010
+ </remarks>
+</member><member name="M:SSLogica.Encuesta.#ctor(System.String,System.DateTime,System.DateTime,System.Int32,System.Int32,System.Double,System.Int32,System.Boolean,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+	<summary>
+ Constructor para el registro de encuestas.
+ </summary>
+	<param name="pnombre">Nombre</param>
+	<param name="pfechaInicio">Fecha de inicio</param>
+	<param name="pfechaFin">Fecha de fin</param>
+	<param name="ppoblacion">Población</param>
+	<param name="pmuestraOriginal">Muestra original</param>
+	<param name="pmargenErrorOriginal">Margen de error original</param>
+	<param name="pdiasParaAnalisis">Cantidad de días para análisis</param>
+	<param name="pvalida">Encuesta valida</param>
+	<param name="pproposito">Propósito</param>
+	<param name="pidTema">ID del tema</param>
+	<param name="pidParametrizador">ID del parametrizador</param>
+	<param name="pidEncargadoConfeccion">ID del encargado de confección</param>
+	<param name="pidEncargadoSeguimiento">ID del encargado de seguimiento</param>
+	<param name="pidEncargadoAnalisis">ID del encargado de análisis</param>
+	<param name="pidPeriodo">ID del periodo</param>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 20-10-2010
+ Última modificación: 20-10-2010
+ </remarks>
+</member><member name="P:SSLogica.Encuesta.codigo">
+	<summary>
+ Propiedad del código
+ </summary>
+	<value>_codigo</value>
+	<returns>Código de la encuesta</returns>
+</member><member name="P:SSLogica.Encuesta.nombre">
+	<summary>
+ Propiedad del nombbre
+ </summary>
+	<value>_nombre</value>
+	<returns>Nombre de la encuesta</returns>
+</member><member name="P:SSLogica.Encuesta.fechaInicio">
+	<summary>
+ Propiedad de la fechaInicio
+ </summary>
+	<value>_fechaInicio</value>
+	<returns>Fecha de inicio de la encuesta</returns>
+</member><member name="P:SSLogica.Encuesta.fechaFin">
+	<summary>
+ Propiedad de la fechaFin
+ </summary>
+	<value>_fechaFin</value>
+	<returns>Fecha de fin de la encuesta</returns>
+</member><member name="P:SSLogica.Encuesta.poblacion">
+	<summary>
+ Propiedad de la poblacion
+ </summary>
+	<value>_poblacion</value>
+	<returns>Cantidad de población</returns>
+</member><member name="P:SSLogica.Encuesta.muestraOriginal">
+	<summary>
+ Propiedad de la muestraOriginal
+ </summary>
+	<value>_muestraOriginal</value>
+	<returns>Cantidad de muestra original (inicial)</returns>
+</member><member name="P:SSLogica.Encuesta.muestraReal">
+	<summary>
+ Propiedad de la muestraReal
+ </summary>
+	<value>_muestraReal</value>
+	<returns>Cantidad de población</returns>
+</member><member name="P:SSLogica.Encuesta.margenErrorOriginal">
+	<summary>
+ Propiedad de la margenErrorOriginal
+ </summary>
+	<value>_margenErrorOriginal</value>
+	<returns>Margen error original (inicial)</returns>
+</member><member name="P:SSLogica.Encuesta.margenErrorReal">
+	<summary>
+ Propiedad de la margenErrorReal
+ </summary>
+	<value>_margenErrorReal</value>
+	<returns>Margen de error real</returns>
+</member><member name="P:SSLogica.Encuesta.diasParaAnalisis">
+	<summary>
+ Propiedad de la diasParaAnalisis
+ </summary>
+	<value>_diasParaAnalisis</value>
+	<returns>Cantidad de días hábiles para análisis</returns>
+</member><member name="P:SSLogica.Encuesta.valida">
+	<summary>
+ Propiedad de la valida o invalida
+ </summary>
+	<value>_valida</value>
+	<returns>True si es valida o false si es invalida</returns>
+</member><member name="P:SSLogica.Encuesta.proposito">
+	<summary>
+ Propiedad del proposito
+ </summary>
+	<value>_proposito</value>
+	<returns>Cantidad de población</returns>
+</member><member name="P:SSLogica.Encuesta.tema">
+	<summary>
+ Propiedad del objeto tema
+ </summary>
+	<value>_tema</value>
+	<returns>Objeto tema de la encuesta</returns>
+</member><member name="P:SSLogica.Encuesta.idTema">
+	<summary>
+ Propiedad del idTema
+ </summary>
+	<value>_idTema</value>
+	<returns>ID del objeto tema</returns>
+</member><member name="P:SSLogica.Encuesta.encargadoConfeccion">
+	<summary>
+ Propiedad del objeto Usuario confeccionador
+ </summary>
+	<value>_encargadoConfeccion</value>
+	<returns>Encargado de confección de la encuesta</returns>
+</member><member name="P:SSLogica.Encuesta.idEncargadoConfeccion">
+	<summary>
+ Propiedad del idEncargadoConfeccion
+ </summary>
+	<value>_idEncargadoConfeccion</value>
+	<returns>id del encargado de confección</returns>
+</member><member name="P:SSLogica.Encuesta.encargadoSeguimiento">
+	<summary>
+ Propiedad del objeto Usuario follower
+ </summary>
+	<value>_encargadoSeguimiento</value>
+	<returns>Encargado de seguimiento de la encuesta</returns>
+</member><member name="P:SSLogica.Encuesta.idEncargadoSeguimiento">
+	<summary>
+ Propiedad del idEncargadoSeguimiento
+ </summary>
+	<value>_idEncargadoSeguimiento</value>
+	<returns>id del encargado de seguimiento</returns>
+</member><member name="P:SSLogica.Encuesta.encargadoAnalisis">
+	<summary>
+ Propiedad del objeto Usuario analizador
+ </summary>
+	<value>_encargadoAnalisis</value>
+	<returns>Encargado de análisis de la encuesta</returns>
+</member><member name="P:SSLogica.Encuesta.idEncargadoAnalisis">
+	<summary>
+ Propiedad del idEncargadoAnalisis
+ </summary>
+	<value>_idEncargadoAnalisis</value>
+	<returns>id del encargado de análisis</returns>
+</member><member name="P:SSLogica.Encuesta.encargadoParametrizacion">
+	<summary>
+ Propiedad del objeto Usuario parametrizador
+ </summary>
+	<value>_encargadoParametrizador</value>
+	<returns>Parametrizador de la encuesta</returns>
+</member><member name="P:SSLogica.Encuesta.idEncargadoParametrizacion">
+	<summary>
+ Propiedad del idEncargadoParametrizacion
+ </summary>
+	<value>_idEncargadoParametrizacion</value>
+	<returns>id del encargado de parametrizacion</returns>
+</member><member name="P:SSLogica.Encuesta.contactosInvitados">
+	<summary>
+ Propiedad de los contactosInvitados
+ </summary>
+	<value>_contactosInvitados</value>
+	<returns>Contactos invitados a la encuesta</returns>
+</member><member name="P:SSLogica.Encuesta.contactosReales">
+	<summary>
+ Propiedad de los contactosReales, quienes en realidad respondieron la encuesta.
+ </summary>
+	<value>_contactosReales</value>
+	<returns>Contactos reales a la encuesta</returns>
+</member><member name="P:SSLogica.Encuesta.periodo">
+	<summary>
+ Propiedad del objeto periodo
+ </summary>
+	<value>_periodo</value>
+	<returns>Objeto periodo</returns>
+</member><member name="P:SSLogica.Encuesta.idPeriodo">
+	<summary>
+ Propiedad del idPeriodo
+ </summary>
+	<value>_idPeriodo</value>
+	<returns>ID del periodo</returns>
+</member><member name="P:SSLogica.Encuesta.cuestionario">
+	<summary>
+ Propiedad del objeto cuestionario
+ </summary>
+	<value>_cuestionario</value>
+	<returns>Objeto cuestionario</returns>
+</member><member name="P:SSLogica.Encuesta.idCuestionario">
+	<summary>
+ Propiedad del idCuestionario
+ </summary>
+	<value>_idCuestionario</value>
+	<returns>ID del cuestionario</returns>
+</member><member name="T:SSLogica.Encuesta">
+	<summary>
+ Clase Encuesta
+ </summary>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 20-10-2010
+ Última modificación: 20-10-2010
+ </remarks>
+</member><member name="M:SSLogica.MultiIndustria.indutriaRegistrar(System.String)">
+	<summary>Registro de una industria</summary>
+	<param name="ptipo">Tipo de industria</param>
+	<exception cref="T:System.Data.SqlClient.SqlException">Se lanza cuando hay errores en la gestión de los datos</exception>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 23-10-2010
+ Última modificacion: 24-10-2010
+ </remarks>
+</member><member name="M:SSLogica.MultiIndustria.industriasBuscar(System.String)">
+	<summary>Buscar una industria</summary>
+	<param name="pcriterio">Criterio por el cuál se realiza la búsqueda</param>
+	<returns>Lista de industrias</returns>
+	<exception cref="T:System.Data.SqlClient.SqlException">Se lanza cuando hay errores en la gestión de los datos</exception>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 23-10-2010
+ Última modificacion: 24-10-2010
+ </remarks>
+</member><member name="M:SSLogica.MultiIndustria.industriaBuscar(System.String)">
+	<summary>Buscar una industria por código</summary>
+	<param name="pcodigo">Código de una industria</param>
+	<returns>Lista de industrias</returns>
+	<exception cref="T:System.Data.SqlClient.SqlException">Se lanza cuando hay errores en la gestión de los datos</exception>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 23-10-2010
+ Última modificacion: 24-10-2010
+ </remarks>
+</member><member name="M:SSLogica.MultiIndustria.industriaBuscar(System.Int32)">
+	<summary>Buscar una industria por código</summary>
+	<param name="pcodigo">Código de una industria</param>
+	<returns>Lista de industrias</returns>
+	<exception cref="T:System.Data.SqlClient.SqlException">Se lanza cuando hay errores en la gestión de los datos</exception>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 23-10-2010
+ Última modificacion: 24-10-2010
+ </remarks>
+</member><member name="M:SSLogica.MultiIndustria.industriaDevolverCodigo(System.String)">
+	<summary>Devuelve el código de una industria</summary>
+	<param name="ptipo">Tipo de industria</param>
+	<exception cref="T:System.Data.SqlClient.SqlException">Se lanza cuando hay errores en la gestión de los datos</exception>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 23-10-2010
+ Última modificacion: 24-10-2010
+ </remarks>
+</member><member name="M:SSLogica.MultiIndustria.industriaCargar(System.Data.IDataReader)">
+	<summary>Lista de atributos de industrias almacenadas previamente en la base de datos</summary>
+	<returns>Lista de datos de cada industria</returns>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 23-10-2010
+ Última modificacion: 24-10-2010
+ </remarks>
+</member><member name="M:SSLogica.MultiIndustria.industriaModificar(SSLogica.Industria)">
+	<summary>Modificación de una industria</summary>
+	<param name="pindustria">Objeto tipo Industria</param>
+	<exception cref="T:System.Data.SqlClient.SqlException">Se lanza cuando hay errores en la gestión de los datos</exception>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 23-10-2010
+ Última modificacion: 24-10-2010
+ </remarks>
+</member><member name="M:SSLogica.MultiIndustria.industriaEliminar(SSLogica.Industria)">
+	<summary>Eliminación de una industria</summary>
+	<param name="pindustria">Objeto de tipo Industria</param>
+	<exception cref="T:System.Data.SqlClient.SqlException">Se lanza cuando hay errores en la gestión de los datos</exception>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 23-10-2010
+ Última modificacion: 24-10-2010
+ </remarks>
+</member><member name="M:SSLogica.MultiIndustria.industriaListar">
+	<summary>Listar industrias</summary>
+	<returns>Lista de industrias</returns>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 23-10-2010
+ Última modificacion: 24-10-2010
+ </remarks>
+</member><member name="M:SSLogica.MultiAcceso.buscarPorClave(System.String)">
+	<summary>
+ Busca un acceso por su clave.
+ </summary>
+	<param name="pclave">Clave que se le asigna al Acceso en la base de datos</param>
+	<returns>El objeto Acceso que se encontro</returns>
+	<exception cref="T:System.Data.SqlClient.SqlException">Error con la base de datos</exception>
+</member><member name="M:SSLogica.MultiAcceso.buscarPorEjemplar(System.String)">
+	<summary>
+ Busca un acceso por el ejemplar al que pertenece.
+ </summary>
+	<param name="pcodigoEjemplar">Codigo del Ejemplar al que pertenece el Acceso</param>
+	<returns>El objeto Acceso que se encontro</returns>
+	<exception cref="T:System.Data.SqlClient.SqlException">Error con la base de datos</exception>
+</member><member name="M:SSLogica.MultiAcceso.cargarAcceso(System.Data.IDataReader)">
+	<summary>
+ Ayuda al multi a cargar los Accesos
+ </summary>
+	<param name="dr">Objetos con los datos del acceso de la BD</param>
+	<returns>Objeto Acceso que se encontro</returns>
+</member><member name="M:SSLogica.MultiAcceso.buscarAccesosBloqueadosDeEncuesta(System.Int32)">
+	<summary>
+ buscarinvitacionsPorCodigo
+ </summary>
+	<param name="pcriterio">criterio de busqueda </param>
+	<returns name="lista invitacions">resultado de la lista de invitacions que se buscaron</returns>
+	<remarks>Creado por: Esteban Lopez, Creado: 24/10/2010, Modificado:  </remarks>
+</member><member name="M:SSLogica.MultiEmpresa.empresaRegistrar(System.String,System.String,System.String,System.Int32)">
+	<summary>Registro de una Empresa</summary>
+	<param name="pnombre">Nombre de la empresa</param>
+	<param name="pdireccion">Dirección física de la empresa</param>
+	<param name="ptelefono">Teléfono de la empresa</param>
+	<param name="pidIndustria">Código de la industria asociada</param>
+	<exception cref="T:System.Data.SqlClient.SqlException">Se lanza cuando hay errores en la inserción de los datos</exception>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 23-10-2010
+ Última modificacion: 24-10-2010
+ </remarks>
+</member><member name="M:SSLogica.MultiEmpresa.empresaBuscar(System.Int32)">
+	<summary>Buscar una empresa</summary>
+	<param name="pcodigo">Código de una empresa</param>
+	<returns>Objeto de tipo Empresa</returns>
+	<exception cref="T:System.Data.SqlClient.SqlException">Se lanza cuando hay errores en la búsqueda de los datos</exception>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 23-10-2010
+ Última modificacion: 24-10-2010
+ </remarks>
+</member><member name="M:SSLogica.MultiEmpresa.empresaBuscar(System.String)">
+	<summary>Buscar una empresa</summary>
+	<param name="pcriterio">Criterio por el cuál se realiza la búsqueda</param>
+	<returns>Lista de empresas</returns>
+	<exception cref="T:System.Data.SqlClient.SqlException">Se lanza cuando hay errores en la inserción de los datos</exception>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 23-10-2010
+ Última modificacion: 24-10-2010
+ </remarks>
+</member><member name="M:SSLogica.MultiEmpresa.empresaDevolverCodigo(System.String)">
+	<summary>Devuelve el código de una empresa</summary>
+	<param name="pnombre">Nombre de la empresa</param>
+	<exception cref="T:System.Data.SqlClient.SqlException">Se lanza cuando hay errores en la gestión de los datos</exception>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 23-10-2010
+ Última modificacion: 24-10-2010
+ </remarks>
+</member><member name="M:SSLogica.MultiEmpresa.empresaCargar(System.Data.IDataReader)">
+	<summary>Cargar los datos de una empresa</summary>
+	<returns>Datos de una empresa</returns>
+	<exception cref="T:System.Data.SqlClient.SqlException">Se lanza cuando hay errores en la inserción de los datos</exception>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 23-10-2010
+ Última modificacion: 24-10-2010
+ </remarks>
+</member><member name="M:SSLogica.MultiEmpresa.empresaModificar(SSLogica.Empresa)">
+	<summary>Modificar una empresa</summary>
+	<param name="pempresa">Objeto de tipo Empresa</param>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 23-10-2010
+ Última modificacion: 24-10-2010
+ </remarks>
+</member><member name="M:SSLogica.MultiEmpresa.empresaEliminar(SSLogica.Empresa)">
+	<summary>Eliminación de una empresa</summary>
+	<param name="pempresa">Objeto de tipo Empresa</param>
+	<exception cref="T:System.Data.SqlClient.SqlException">Se lanza cuando hay errores en la inserción de los datos</exception>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 23-10-2010
+ Última modificacion: 24-10-2010
+ </remarks>
+</member><member name="M:SSLogica.MultiEmpresa.empresasListar">
+	<summary>Listar empresas registradas</summary>
+	<returns>Lista de objetos tipo Empresa</returns>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 23-10-2010
+ Última modificacion: 24-10-2010
+ </remarks>
+</member><member name="M:SSLogica.MultiEncuesta.encuestaRegistrar(System.String,System.DateTime,System.DateTime,System.Int32,System.Int32,System.Double,System.Int32,System.Boolean,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+	<summary>
+ Este método registra una encuesta en la base de datos.
+ </summary>
+	<param name="pnombre">Nombre</param>
+	<param name="pfechaInicio">Fecha de inicio</param>
+	<param name="pfechaFin">Fecha de fin</param>
+	<param name="ppoblacion">Población</param>
+	<param name="pmuestraOriginal">Muestra original</param>
+	<param name="pmargenErrorOriginal">Margen de error original</param>
+	<param name="pdiasParaAnalisis">Cantidad de días para análisis</param>
+	<param name="pvalida">Encuesta valida</param>
+	<param name="pproposito">Propósito</param>
+	<param name="pidTema">ID del tema</param>
+	<param name="pidParametrizador">ID del parametrizador</param>
+	<param name="pidEncargadoConfeccion">ID del encargado de confección</param>
+	<param name="pidEncargadoSeguimiento">ID del encargado de seguimiento</param>
+	<param name="pidEncargadoAnalisis">ID del encargado de análisis</param>
+	<param name="pidPeriodo">ID del periodo</param>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 20-10-2010
+ Última modificación: 20-10-2010
+ </remarks>
+</member><member name="M:SSLogica.MultiEncuesta.encuestaBuscarPorEstado(System.String,System.String)">
+	<summary>
+ Este método busca una encuesta segun el estado recibido
+ </summary>
+	<param name="pvalor">Valor del criterio</param>
+	<param name="pestado">Estado de la encuesta, debe ser en confección</param>
+	<returns>Lista de objetos Encuesta</returns>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ Fecha de creación: 29-11-2010
+ Última modificación: 29-11-2010
+ </remarks>
+</member><member name="M:SSLogica.MultiEncuesta.encuestaBuscar(System.String)">
+	<summary>
+ Este método busca una encuesta a partir de un nombre.
+ </summary>
+	<param name="pnombre">Nombre</param>
+	<returns>Objeto Encuesta</returns>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 20-10-2010
+ Última modificación: 20-10-2010
+ </remarks>
+</member><member name="M:SSLogica.MultiEncuesta.validarEstadoParaAnalisis(System.Int32)">
+	<summary>
+ Cada vez que responden una encuesta, este metodo validara si hay que cambiar el estado a 'Análisis'
+ </summary>
+	<param name="pcodigoEncuesta">Código de la encuesta</param>
+	<returns>True si cambio el estado, False si no lo cambio</returns>
+	<remarks>Hecho por : Carlos Domínguez</remarks>
+</member><member name="M:SSLogica.MultiEncuesta.encuestaBuscarPorCriterio(System.String)">
+	<summary>
+ Este método busca una encuesta a partir de un criterio el cual puede ser nombre o tema.
+ </summary>
+	<param name="pvalor">Valor del criterio</param>
+	<returns>Lista de objetos Encuesta</returns>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 20-10-2010
+ Última modificación: 20-10-2010
+ </remarks>
+</member><member name="M:SSLogica.MultiEncuesta.encuestaBuscarPorCriterio(System.String,System.String)">
+	<summary>
+ Este método busca una encuesta a partir de un criterio el cual puede ser nombre o tema.
+ </summary>
+	<param name="pvalor">Valor del criterio</param>
+	<returns>Lista de objetos Encuesta</returns>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 20-10-2010
+ Última modificación: 20-10-2010
+ </remarks>
+</member><member name="M:SSLogica.MultiEncuesta.buscarPorEjemplar(System.String)">
+	<summary>
+ Este método busca una encuesta a partir del codigo de un ejemplar.
+ </summary>
+	<param name="pcodigoEjemplar">Codigo del ejemplar</param>
+	<returns>Objeto Encuesta que se encontro</returns>
+</member><member name="M:SSLogica.MultiEncuesta.cargarEncuesta(System.Data.IDataReader)">
+	<summary>
+ Método que levanta un objeto Encuesta a partir de un IDataReader.
+ </summary>
+	<param name="dr">Objeto IDataReader</param>
+	<returns>Objeto Encuesta</returns>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 20-10-2010
+ Última modificación: 20-10-2010
+ </remarks>
+</member><member name="M:SSLogica.MultiEncuesta.encuestaModificar(SSLogica.Encuesta)">
+	<summary>
+ Este método se encarga de modificar los datos de una encuesta en la base de datos.
+ </summary>
+	<param name="pencuesta">Objeto Encuesta</param>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 20-10-2010
+ Última modificación: 20-10-2010
+ </remarks>
+</member><member name="M:SSLogica.MultiEncuesta.encuestasListar(System.String)">
+	<summary>
+ Este método se encarga de listar todas las encuestas existentes en la base de datos.
+ </summary>
+	<returns>Lista de objetos Encuesta</returns>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 20-10-2010
+ Última modificación: 20-10-2010
+ </remarks>
+</member><member name="M:SSLogica.MultiEncuesta.buscar(System.Int32)">
+	<summary>
+ Busca la encusta a partir del codigo
+ </summary>
+	<param name="pcodigo"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:SSLogica.MultiEncuesta.buscarPorIdConfeccionador(System.Int32,System.Int32)">
+	<summary>
+ Busca por confeccionador las encuestas existentes.
+ </summary>
+	<param name="pid"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:SSLogica.MultiEncuesta.buscarPorIdSeguimiento(System.Int32,System.Int32)">
+	<summary>
+ Busca por confeccionador las encuestas existentes.
+ </summary>
+	<param name="pid"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:SSLogica.MultiEncuesta.buscarPorIdAnalisis(System.Int32,System.Int32)">
+	<summary>
+ Busca por confeccionador las encuestas existentes.
+ </summary>
+	<param name="pid"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:SSLogica.MultiEncuesta.encuestasBuscarPorEstadoUsuario(System.String,System.Int32)">
+	<summary>
+ Este método busca una encuesta a partir del nombre
+ </summary>
+	<param name="pestado">Estado de la encuesta, debe ser en confección</param>
+	<param name="pusuario">Usuario que está asignado para realizar la confección del formulario</param>
+	<returns>Lista de objetos Encuesta</returns>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ Fecha de creación: 16-11-2010
+ Última modificación: 16-11-2010
+ </remarks>
+</member><member name="M:SSLogica.MultiEncuesta.encuestasBuscarParaGestionDeArchivos(System.Int32)">
+	<summary>
+ Este método busca una encuesta a partir del nombre
+ </summary>
+	<param name="pusuario">Usuario que está asignado para realizar la confección del formulario</param>
+	<returns>Lista de objetos Encuesta</returns>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ Fecha de creación: 16-11-2010
+ Última modificación: 16-11-2010
+ </remarks>
+</member><member name="M:SSLogica.MultiEncuesta.modificarMuestra(System.Int32,System.Int32)">
+	<summary>
+ Muestra modificar
+ </summary>
+	<param name="pmuestra">pmuestra</param>
+	<param name="pidEncuesta">pidEncuesta </param>
+	<remarks>Creado por: Esteban Lopez, Creado: 24/10/2010, Modificado:  </remarks>
+</member><member name="M:SSLogica.MultiEncuesta.encuestaBuscarPorNombre(System.String,System.String,System.Int32)">
+	<summary>
+ Este método busca una encuesta a partir del nombre
+ </summary>
+	<param name="pvalor">Valor del criterio</param>
+	<param name="pestado">Estado de la encuesta, debe ser en confección</param>
+	<param name="pusuario">Usuario que está asignado para realizar la confección del formulario</param>
+	<returns>Lista de objetos Encuesta</returns>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ Fecha de creación: 16-11-2010
+ Última modificación: 16-11-2010
+ </remarks>
+</member><member name="M:SSLogica.MultiEncuesta.encuestaBuscarParaClonar(System.String,System.Int32)">
+	<summary>
+ Este método busca una encuesta de la lista de encuestas que pueden se clonadas
+ </summary>
+	<param name="pvalor">Valor del criterio</param>
+	<param name="ptema">Tema de la encuesta</param>
+	<returns>Lista de objetos Encuesta</returns>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ Fecha de creación: 16-11-2010
+ Última modificación: 16-11-2010
+ </remarks>
+</member><member name="M:SSLogica.MultiEncuesta.cambiarEstadoEncuestaASeguimiento(System.Int32)">
+	<summary>
+ Cambia el estado de una encuesta de confección a seguimiento
+ </summary>
+	<param name="pcodEncuesta">Código de la encuesta a la que se le cambia el estado</param>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ Fecha de creación: 16-11-2010
+ Última modificación: 16-11-2010
+ </remarks>
+</member><member name="M:SSLogica.MultiEncuesta.encuestaBuscarParaComparar(System.Int32,System.Int32)">
+	<summary>
+ Este método envía la solicitud al MultiEncuesta para listar todas las encuestas existentes en la base de datos,
+ este metodo es exclusivo para el reporte de comparar dos encuestas.
+ </summary>
+	<param name="pcodPeriodo">Codigo del periodo de la encuesta</param>
+	<param name="pcodTema">Codigo del tema de la encuesta</param>
+	<returns>Lista de objetos Encuesta</returns>
+	<remarks>
+ Autor: Carlos Dominguez
+ Versión: 1.0
+ Fecha de creación: 20-10-2010
+ Última modificación: 20-10-2010
+ </remarks>
+</member><member name="M:SSLogica.MultiEncuesta.encuestaBuscarParaComparar(System.Int32,System.Int32,System.Int32)">
+	<summary>
+ Este método envía la solicitud al MultiEncuesta para listar todas las encuestas existentes en la base de datos.
+ </summary>
+	<param name="pcodEncuExc">Codigo de la encuesta que se quiere excluir en la busqueda</param>
+	<param name="pcodPeriodo">Codigo del periodo de la encuesta</param>
+	<param name="pcodTema">Codigo del tema de la encuesta</param>
+	<returns>Lista de objetos Encuesta</returns>
+	<remarks>
+ Autor: Carlos Dominguez
+ Versión: 1.0
+ Fecha de creación: 20-10-2010
+ Última modificación: 20-10-2010
+ </remarks>
+</member><member name="M:SSLogica.MultiInvitacion.invitacionRegistrar(System.String,System.Collections.Generic.List{System.Int32})">
+	<summary>
+ Asociar contacto a una encuesta (Invitar)
+ </summary>
+	<param name="pidEncuesta">Nombre contacto</param>
+	<param name="plistaId">Nombre del departemnto</param>
+	<remarks>Creado por: Esteban Lopez, Creado: 15/10/2010, Modificado:  </remarks>
+</member><member name="M:SSLogica.MultiInvitacion.cargarInvitaciones(System.Data.IDataReader)">
+	<summary>
+ cargarinvitacion
+ </summary>
+	<param name="dr">data reader </param>
+	<returns name="invitacion">retorna el invitacion con los datos cargados</returns>
+	<remarks>Creado por: Esteban Lopez, Creado: 24/10/2010, Modificado:  </remarks>
+</member><member name="M:SSLogica.MultiInvitacion.inivitacionModificar(SSLogica.Invitacion)">
+	<summary>
+ invitacionModificar
+ </summary>
+	<param name="pinvitacion">pinvitacion </param>
+	<remarks>Creado por: Esteban Lopez, Creado: 24/10/2010, Modificado:  </remarks>
+</member><member name="M:SSLogica.MultiInvitacion.invitacionEliminar(SSLogica.Invitacion)">
+	<summary>
+ invitacionEliminar
+ </summary>
+	<param name="pinvitacion">invitacion</param>
+	<remarks>Creado por: Esteban Lopez, Creado: 24/10/2010, Modificado:  </remarks>
+</member><member name="M:SSLogica.MultiInvitacion.listarInvitaciones">
+	<summary>
+ listarinvitacions
+ </summary>
+	<returns name="listainvitacions">lista con los invitacions</returns>
+	<remarks>Creado por: Esteban Lopez, Creado: 24/10/2010, Modificado:  </remarks>
+</member><member name="M:SSLogica.MultiInvitacion.invitacionBuscar(System.Int32,System.Int32)">
+	<summary>
+ invitacionBuscar
+ </summary>
+	<param name="pcontacto ">id del contacto</param>
+	<param name="pcodigoEncuesta">codigo encuesta</param>
+	<returns name="invitacion">invitacion que busco</returns>
+	<remarks>Creado por: Esteban Lopez, Creado: 24/10/2010, Modificado:  </remarks>
+</member><member name="M:SSLogica.MultiInvitacion.buscarinvitacionsPorCodigo(System.String)">
+	<summary>
+ buscarinvitacionsPorCodigo
+ </summary>
+	<param name="pcriterio">criterio de busqueda </param>
+	<returns name="lista invitacions">resultado de la lista de invitacions que se buscaron</returns>
+	<remarks>Creado por: Esteban Lopez, Creado: 24/10/2010, Modificado:  </remarks>
+</member><member name="M:SSLogica.MultiInvitacion.listarInvitacionesPorEncuesta(System.Int32)">
+	<summary>
+ listarinvitacionspor encuesta
+ </summary>
+	<returns name="listainvitacions">lista con los invitacions</returns>
+	<remarks>Creado por: Esteban Lopez, Creado: 24/10/2010, Modificado:  </remarks>
+</member><member name="M:SSLogica.Acceso.#ctor(System.Int32,System.String,System.String)">
+	<summary>
+ Constructor de la clase Acceso
+ </summary>
+	<param name="pcodigoEjemplar">Codigo del ejemplar al que pertencese el acceso</param>
+	<param name="pclave">Clave del acceso</param>
+	<param name="pestadoAcceso">Estado del acceso: Válido o Bloqueado</param>
+</member><member name="P:SSLogica.Acceso.CodigoEjemplar">
+	<summary>
+ Propiedad del CodigoEjemplar
+ </summary>
+	<value>pcodigo</value>
+	<returns>Código del ejemplar al que pretenece el acceso: Integer</returns>
+</member><member name="P:SSLogica.Acceso.Clave">
+	<summary>
+ Propiedad para la clave
+ </summary>
+	<returns>Clave del acceso: String</returns>
+</member><member name="P:SSLogica.Acceso.EstadoAcceso">
+	<summary>
+ Propiedad para el estado del acceso
+ </summary>
+	<returns>Clave del acceso: String</returns>
+</member><member name="P:SSLogica.Acceso.ObjContacto">
+	<summary>
+ Propiedad para el objeto contacto 
+ </summary>
+	<returns>Contacto al que se le envia el acceso</returns>
+</member><member name="P:SSLogica.Acceso.ObjEncuesta">
+	<summary>
+ Propiedad para el objeto Encuesta
+ </summary>
+	<returns>encuesta del acceso</returns>
+</member><member name="T:SSLogica.Acceso">
+	<summary>
+ Clase Acceso
+ </summary>
+	<remarks>
+ Creado por: Carlos Domínguez Lara
+ Fecha: 27/10/2010 
+ Modificado: 27/10/2010 
+ </remarks>
+</member><member name="M:SSLogica.Producto.#ctor(System.Int32,System.String,System.String,System.String)">
+	<summary>
+ Constructor de la clase Producto
+ </summary>
+	<param name="pCodigo">Codigo</param>
+	<param name="pnombre">Nombre</param>
+	<param name="pmarca">Marca</param>
+	<param name="pfabricante">Fabricante</param>
+</member><member name="P:SSLogica.Producto.Codigo">
+	<summary>
+ Propiedad del codigo
+ </summary>
+	<value>pcodigo</value>
+	<returns>Código del producto: Integer</returns>
+</member><member name="P:SSLogica.Producto.Nombre">
+	<summary>
+ Propiedad del nombre
+ </summary>
+	<value>pnombre</value>
+	<returns>Nombre del producto: String</returns>
+</member><member name="P:SSLogica.Producto.Marca">
+	<summary>
+ Propiedad de la marca
+ </summary>
+	<value>pmarca</value>
+	<returns>Marca del producto: String</returns>
+</member><member name="P:SSLogica.Producto.Fabricante">
+	<summary>
+ Propiedad del fabricante
+ </summary>
+	<value>pfabricante</value>
+	<returns>Fabricante del producto: String</returns>
+</member><member name="P:SSLogica.Producto.Tema">
+	<summary>
+ Propiedad del tema
+ </summary>
+	<value>ptema</value>
+	<returns>el objeto tema del producto</returns>
+</member><member name="T:SSLogica.Producto">
+	<summary>
+ Clase Producto
+ </summary>
+	<remarks>
+ Creado por: Carlos Domínguez Lara
+ Fecha: 19/10/2010 
+ Modificado: 19/10/2010
+ </remarks>
+</member><member name="M:SSLogica.MultiBitacora.registrar(System.String,System.String,System.String)">
+	<summary>
+ Registra un nuevo evento a la bitacora
+ </summary>
+</member><member name="M:SSLogica.MultiBitacora.cargarBitacora(System.Data.IDataReader)">
+	<summary>
+ Ayuda al multi a cargar los objetos bitacora
+ </summary>
+</member><member name="M:SSLogica.MultiBitacora.buscar(System.String)">
+	<summary>
+ Busca las bitacoras por la informacion
+ </summary>
+</member><member name="T:SSLogica.MultiBitacora">
+	<summary>
+ Clase MultiBitacora
+ </summary>
+	<remarks>
+ Creado por: Carlos Domínguez Lara
+ Fecha: 20/10/2010 
+ Modificado: 20/10/2010
+ </remarks>
+</member><member name="M:SSLogica.MultiDepartamento.departamentoRegistrar(System.Int32,System.String)">
+	<summary>
+ departamentoRegistrar
+ </summary>
+	<param name="pcodigo">codigo del departamento </param>
+	<param name="pnombre">nombre del departamento</param>
+	<remarks>Creado por: Esteban Lopez, Creado: 24/10/2010, Modificado:  </remarks>
+</member><member name="M:SSLogica.MultiDepartamento.cargarDepartamento(System.Data.IDataReader)">
+	<summary>
+ cargarDepartamento
+ </summary>
+	<param name="dr">data reader </param>
+	<returns name="departamento">retorna el departamento con los datos cargados</returns>
+	<remarks>Creado por: Esteban Lopez, Creado: 24/10/2010, Modificado:  </remarks>
+</member><member name="M:SSLogica.MultiDepartamento.departamentoModificar(SSLogica.Departamento)">
+	<summary>
+ departamentoModificar
+ </summary>
+	<param name="pdepartamento">pdepartamento </param>
+	<remarks>Creado por: Esteban Lopez, Creado: 24/10/2010, Modificado:  </remarks>
+</member><member name="M:SSLogica.MultiDepartamento.departamentoEliminar(SSLogica.Departamento)">
+	<summary>
+ departamentoEliminar
+ </summary>
+	<param name="pdepartamento">departamento</param>
+	<remarks>Creado por: Esteban Lopez, Creado: 24/10/2010, Modificado:  </remarks>
+</member><member name="M:SSLogica.MultiDepartamento.listarDepartamentos">
+	<summary>
+ listarDepartamentos
+ </summary>
+	<returns name="listaDepartamentos">lista con los departamentos</returns>
+	<remarks>Creado por: Esteban Lopez, Creado: 24/10/2010, Modificado:  </remarks>
+</member><member name="M:SSLogica.MultiDepartamento.departamentoBuscar(System.Int32)">
+	<summary>
+ departamentoBuscar
+ </summary>
+	<param name="pcodigo">pcodigo</param>
+	<returns name="departamento">departamento que busco</returns>
+	<remarks>Creado por: Esteban Lopez, Creado: 24/10/2010, Modificado:  </remarks>
+</member><member name="M:SSLogica.MultiDepartamento.buscarDepartamentosPorCodigo(System.String)">
+	<summary>
+ buscarDepartamentosPorCodigo
+ </summary>
+	<param name="pcriterio">criterio de busqueda </param>
+	<returns name="lista departamentos">resultado de la lista de departamentos que se buscaron</returns>
+	<remarks>Creado por: Esteban Lopez, Creado: 24/10/2010, Modificado:  </remarks>
+</member><member name="M:SSLogica.AyudanteArchivador.subirArchivo(System.Byte[],System.String,System.String)">
+	<summary>
+ Método que inserta un archivo en el sistema.
+ </summary>
+	<param name="parchivo">archivo</param>
+	<param name="pruta">ruta del archivo</param>
+	<param name="pidEncuesta">id de la encuesta</param>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 20-11-2010
+ Última modificación: 20-11-2010
+ </remarks>
+</member><member name="M:SSLogica.AyudanteArchivador.bajarArchivo(System.Int32,System.String)">
+	<summary>
+ Método que baja un archivo byte de la BD y lo convierte en archivo plano.
+ </summary>
+	<param name="pidEncuesta"> id de la encuesta a la que pertenece el archivo</param>
+	<returns>archivo byte</returns>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 21-11-2010
+ Última modificación: 21-11-2010
+ </remarks>
+</member><member name="M:SSLogica.Usuario.#ctor(System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.Int32)">
+	<summary>
+ Constructor de la clase Usuario
+ </summary>
+	<param name="pcedula">Cédula del usuario</param>
+	<param name="pclave">Contrasenna que se le asigna al usuario</param>
+	<param name="pcodigoDep">Código del departamento al que se asingo el usuario</param>
+	<param name="pcodigoRol">Código del rol que se le asigno al usuario</param>
+	<param name="pcorreo">Correo electrónico del usuario</param>
+	<param name="pnombre">Nombre del usuario</param>
+	<param name="pnombreUsuario">Nombre usuario que se le asignara para ser reconocido en la aplicación</param>
+	<param name="pprimerApellido">Primer apellido del usuario</param>
+	<param name="psegundoApellido">Segundo apellido del usuario</param>
+</member><member name="P:SSLogica.Usuario.Id">
+	<summary>
+ Propiedad del Id
+ </summary>
+	<value>Id</value>
+	<returns>id del Usuario: Integer</returns>
+</member><member name="P:SSLogica.Usuario.Cedula">
+	<summary>
+ Propiedad de la cédula
+ </summary>
+	<value>Cedula</value>
+	<returns>Cedula del Usuario: String</returns>
+</member><member name="P:SSLogica.Usuario.Nombre">
+	<summary>
+ Propiedad del nombre
+ </summary>
+	<value>Nombre</value>
+	<returns>Cedula del Usuario: String</returns>
+</member><member name="P:SSLogica.Usuario.PrimerApellido">
+	<summary>
+ Propiedad para el primer apellido
+ </summary>
+	<value>PrimerApellido</value>
+	<returns>Primer apellido del Usuario: String</returns>
+</member><member name="P:SSLogica.Usuario.SegundoApellido">
+	<summary>
+ Propiedad para el primer apellido
+ </summary>
+	<value>PrimerApellido</value>
+	<returns>Primer apellido del Usuario: String</returns>
+</member><member name="P:SSLogica.Usuario.Correo">
+	<summary>
+ Propiedad para el correo electrónico del usuario
+ </summary>
+	<value>Correo</value>
+	<returns>Correo electrónico del Usuario: String</returns>
+</member><member name="P:SSLogica.Usuario.NombreUsuario">
+	<summary>
+ Propiedad para el nommbre de usuario
+ </summary>
+	<value>NombreUsuario</value>
+	<returns>Nombre de usuario: String</returns>
+</member><member name="P:SSLogica.Usuario.Clave">
+	<summary>
+ Propiedad para la Contrasenna del usuario
+ </summary>
+	<value>Clave</value>
+	<returns>Contrasenna del usuario: String</returns>
+</member><member name="P:SSLogica.Usuario.Departamento">
+	<summary>
+ Propiedad para el departamento al que pertenece el usuario
+ </summary>
+	<value>Departamento</value>
+	<returns>Departamento del usuario: Departamento</returns>
+</member><member name="P:SSLogica.Usuario.Rol">
+	<summary>
+ Propiedad para el rol que se le asigno al usuario
+ </summary>
+	<value>Rol</value>
+	<returns>Rol del usuario: Rol</returns>
+</member><member name="P:SSLogica.Usuario.CodigoRol">
+	<summary>
+ Propiedad para el codigo del rol que se le asigno al usuario
+ </summary>
+	<value>CodigoRol</value>
+	<returns>Codigo del Rol de usuario: Integer</returns>
+</member><member name="P:SSLogica.Usuario.CodigoDep">
+	<summary>
+ Propiedad para el codigo del departamento que se le asigno al usuario
+ </summary>
+	<value>CodigoDep</value>
+	<returns>Codigo del departamento de usuario: Integer</returns>
+</member><member name="T:SSLogica.Usuario">
+	<summary>
+ Clase Usuario
+ </summary>
+	<remarks>
+ Creado por: Carlos Domínguez Lara
+ Fecha:  19/10/2010
+ Modificado: 01/11/2010
+ </remarks>
+</member><member name="M:SSLogica.MultiPeriodo.listarPeriodos">
+	<summary>
+ Este método levanta todos los periodos existentes en el sistema.
+ </summary>
+	<returns>Lista de objetos Periodo</returns>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 20-010-2010
+ Última modificación: 20-010-2010
+ </remarks>
+</member><member name="M:SSLogica.MultiPeriodo.buscar(System.Int32)">
+	<summary>
+ Este método levanta un periodo de la base de datos
+ </summary>
+	<returns>Un objeto Periodo</returns>
+</member><member name="M:SSLogica.MultiPeriodo.cargarPeriodo(System.Data.IDataReader)">
+	<summary>
+ Método que levanta un objeto Periodo a partir de un IDataReader.
+ </summary>
+	<param name="dr">Objeto IDataReader</param>
+	<returns>Objeto Encuesta</returns>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 20-010-2010
+ Última modificación: 20-010-2010
+ </remarks>
+</member><member name="M:SSLogica.MultiProducto.registrar(System.String,System.String,System.String,System.Int32)">
+	<summary>
+ Registra un nuevo producto a la base de datos.
+ </summary>
+	<param name="pnombre">Nombre del nuevo producto</param>
+	<param name="pmarca">Marca del producto</param>
+	<param name="pfabricante">Fabricante del producto</param>
+	<param name="pcodigoTema">Código del tema al que pertenece el producto</param>
+</member><member name="M:SSLogica.MultiProducto.listarPorCriterio(System.String)">
+	<summary>
+ Lista los Productos segun el criterio de busqueda que se le envie.
+ </summary>
+	<param name="pcriterio">Criterio de busqueda que se utilizara</param>
+	<returns>Un List(Of Producto) Con todos los Productos encontrados</returns>
+</member><member name="M:SSLogica.MultiProducto.modificar(SSLogica.Producto)">
+	<summary>
+ Modificar un nuevo producto en la base de datos.
+ </summary>
+	<param name="pobjProducto">El objeto Producto que se desea modificar</param>
+	<exception cref="T:System.Data.SqlClient.SqlException">Error con la base de datos</exception>
+</member><member name="M:SSLogica.MultiProducto.listarProductos">
+	<summary>
+ Lista todos los Productos registrados registrados en la base de datos.
+ </summary>
+	<returns>Un List(Of Producto)</returns>
+	<exception cref="T:System.Data.SqlClient.SqlException">Error con la base de datos</exception>
+</member><member name="M:SSLogica.MultiProducto.eliminar(System.Int32)">
+	<summary>
+ Elimina un producto de la base de datos.
+ </summary>
+	<param name="pcodigoProducto">Código del producto que se va a eliminar</param>
+	<exception cref="T:System.Data.SqlClient.SqlException">Error con la base de datos</exception>
+</member><member name="M:SSLogica.MultiProducto.cargarProducto(System.Data.IDataReader)">
+	<summary>
+ Ayuda al multi a cargar los productos
+ </summary>
+</member><member name="M:SSLogica.MultiProducto.productoDevolverCodigo(System.String)">
+	<summary>Devuelve el codigo de un producto a partir del nombre</summary>
+	<param name="pnombre">Nombre del producto</param>
+	<exception cref="T:System.Data.SqlClient.SqlException">Se lanza cuando hay errores en la consulta</exception>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 23-11-2010
+ Última modificacion: 24-11-2010
+ </remarks>
+</member><member name="T:SSLogica.MultiProducto">
+	<summary>
+ Clase MultiProducto
+ </summary>
+	<remarks>
+ Creado por: Carlos Domínguez Lara
+ Fecha: 20/10/2010 
+ Modificado: 19/11/2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.listarContactos">
+	<summary>
+ Listar contactos
+ </summary>
+	<remarks>Creado por: Esteban Lopez, Creado: 18/10/2010, Modificado:  </remarks>
+</member><member name="M:SSLogica.Gestor.listarContactosCriterios(System.String)">
+	<summary>
+ Listar contactos
+ <param name="pcriterio">criterio</param>
+	</summary>
+	<remarks>Creado por: Esteban Lopez, Creado: 04/12/2010, Modificado:  </remarks>
+</member><member name="M:SSLogica.Gestor.buscarContactoPorId(System.String)">
+	<summary>
+ buscar contacto por id
+<param name="pcriterio">criterio</param>
+	</summary>
+	<remarks>Creado por: Esteban Lopez, Creado: 04/12/2010, Modificado:  </remarks>
+</member><member name="M:SSLogica.Gestor.contactoModificar(SSLogica.Contacto)">
+	<summary>
+ buscar contacto por id
+<param name="pcontacto">contacto</param>
+	</summary>
+	<remarks>Creado por: Esteban Lopez, Creado: 04/12/2010, Modificado:  </remarks>
+</member><member name="M:SSLogica.Gestor.contactoEliminar(System.Int32)">
+	<summary>
+ buscar contacto por id
+ <param name="pidContacto">id contacto</param>
+	</summary>
+	<remarks>Creado por: Esteban Lopez, Creado: 04/12/2010, Modificado:  </remarks>
+</member><member name="M:SSLogica.Gestor.empresasCargarConCodigo">
+	<summary>Cargar los datos de una empresa</summary>
+	<returns>Datos de una empresa</returns>
+	<remarks>
+ Autor: Esteban
+ Versión: 1.0
+ fecha de Creacion: 23-10-2010
+ Última modificacion: 24-10-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.departamentoRegistrar(System.Int32,System.String)">
+	<summary>
+ Registrar departamento
+ </summary>
+	<param name="pcodigo">Codigo del departamento</param>
+	<param name="pnombre">Nombre del departemnto</param>
+	<remarks>Creado por: Esteban Lopez, Creado: 24/10/2010, Modificado:  </remarks>
+</member><member name="M:SSLogica.Gestor.departamentoEliminar(System.Int32)">
+	<summary>
+ Eliminar departamento
+ </summary>
+	<param name="pcodigo">Codigo del departamento</param>
+	<remarks>Creado por: Esteban Lopez, Creado: 24/10/2010, Modificado:  </remarks>
+</member><member name="M:SSLogica.Gestor.cargarDepartamentos">
+	<summary>
+ Carga los departamentos
+ </summary>
+	<returns name="datosDepartamento">datosDepartamento</returns>
+	<remarks>Creado por: Esteban Lopez, Creado: 24/10/2010, Modificado:  </remarks>
+</member><member name="M:SSLogica.Gestor.departamentoBuscarPorCodigo(System.String)">
+	<summary>
+ Carga los departamentos por codigo
+ </summary>
+	<param name="pcodigo">Codigo del departamento</param>
+	<returns name="List of (Array)">datosDepartamento</returns>
+	<remarks>Creado por: Esteban Lopez, Creado: 24/10/2010, Modificado:  </remarks>
+</member><member name="M:SSLogica.Gestor.departamentoModificar(System.String,System.String)">
+	<summary>
+ Modificar departamento
+ </summary>
+	<param name="pcodigo">codigo departamento</param>
+	<param name="pnombre">nombre del departamento</param>
+	<remarks>Creado por: Esteban Lopez, Creado: 24/10/2010, Modificado:  </remarks>
+</member><member name="M:SSLogica.Gestor.login(System.String,System.String)">
+	<summary>
+ Login
+ </summary>
+	<param name="pusuario">nombre de usuario </param>
+	<param name="pcontrasena">usuario</param>
+	<returns name="resultado">resultado</returns>
+	<remarks>Creado por: Esteban Lopez, Creado: 24/10/2010, Modificado:  </remarks>
+</member><member name="M:SSLogica.Gestor.recuperarContrasenna(System.String,System.String)">
+	<summary>
+ Recuperar contrasenna
+ </summary>
+	<param name="pusuario">nombre usuario</param>
+	<param name="pcorreo">correo del usuario</param>
+	<returns name="correcto">correcto es el resultado booleano</returns>
+	<remarks>Creado por: Esteban Lopez, Creado: 22/10/2010, Modificado:  </remarks>
+</member><member name="M:SSLogica.Gestor.cargarUsuariologin(System.String)">
+	<summary>
+ Carga el login de un usuario
+ </summary>
+	<param name="pusuario">cargar el login de usuario.</param>
+	<returns name="usuario">objusuario</returns>
+	<remarks>Creado por: Esteban Lopez, Creado: 22/10/2010, Modificado:  </remarks>
+</member><member name="M:SSLogica.Gestor.cargarBitacora">
+	<summary>
+ Cargar datos de la bitacora
+ </summary>
+	<returns name="datosBitacora">lista de los datos de bitacora</returns>
+	<remarks>Creado por: Esteban Lopez, Creado: 25/10/2010, Modificado:  </remarks>
+</member><member name="M:SSLogica.Gestor.buscarBitacora(System.String)">
+	<summary>
+ Busca la informacion de la bitacora por varios criterios: fecha, evento, nombre_usuario, rol_usuario.
+ <param name="pcriterio">criterio de busqueda</param>
+		<returns name="datosBitacora">lista de los datos de bitacora</returns>
+		<remarks>Creado por: Esteban Lopez, Creado: 22/10/2010, Modificado:  </remarks>
+	</summary>
+</member><member name="M:SSLogica.Gestor.setIdOwner(System.String)">
+	<summary>
+ Inicializa la variable ID_OWNER para saber que usuario ingreso al sistema.
+ <param name="pnombreUsuario">Nombre de usuario</param>
+		<remarks>Creado por: Esteban Lopez, Creado: 22/10/2010, Modificado:  </remarks>
+	</summary>
+</member><member name="M:SSLogica.Gestor.buscarUsuarios(System.String)">
+	<summary>
+ Busca usuarios por varios criterios: Nombre, Cédula, Primer apellido, 
+ Segundo apellido y el rol.
+ </summary>
+	<param name="pcriterio">
+ Es el criterio de busqueda que va utilizar el metodo para encotrar los usuario, 
+ puede ser por: nombre, apellido, cédula, nombre usuario y rol.
+ </param>
+	<returns>List(Of Array) con los usuarios encontrados</returns>
+</member><member name="M:SSLogica.Gestor.usuarioBuscarPorId(System.Int32)">
+	<summary>
+ Busca un usuario por el id.
+ </summary>
+	<param name="pid">
+ Es la identificación que se le pone al usuario en la base de datos.
+ </param>
+	<returns>un objeto Usuario</returns>
+</member><member name="M:SSLogica.Gestor.obtenerDatosUsuario(System.Int32)">
+	<summary>
+ Obtiene los datos que se mostraran en la interfaz de un usuario
+ </summary>
+	<param name="pidUsuario">
+ Es la identificación que se le pone al usuario en la base de datos.
+ </param>
+	<returns>Un Array de String</returns>
+</member><member name="M:SSLogica.Gestor.cargarUsuarios(System.String)">
+	<summary>
+ Lista los usuarios segun el rol que poseen.
+ </summary>
+	<param name="prol">
+ Es el rol que se le asigno al usuario puede ser: Administrador
+ , Profesor y Asistente.
+ </param>
+	<returns>List(Of Array) con los usuarios encontrados</returns>
+</member><member name="M:SSLogica.Gestor.registrarUsuario(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.Int32)">
+	<summary>
+ Registra un nuevo usuario al sistema.
+ </summary>
+	<param name="pcedula">Cédula del usuario.</param>
+	<param name="pnombre">Nombre del usuario.</param>
+	<param name="pprimerApellido">Primer apellido del usuario.</param>
+	<param name="psegundoApellido">Segundo apellido del usuario.</param>
+	<param name="pcorreo">Correo electrónico del usuario.</param>
+	<param name="pnombreUsuario">Nombre de usuario que tendra en el sistema.</param>
+	<param name="pcodigoRol">Código del rol que se le asigno al usuario.</param>
+	<param name="pcodigoDep">Código del departamento que se le asigno al usuario.</param>
+</member><member name="M:SSLogica.Gestor.registrarPrimerUsuario(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.String)">
+	<summary>
+ Registra el primer usuario en el sistema.
+ </summary>
+	<param name="pcedula">Cédula del usuario.</param>
+	<param name="pnombre">Nombre del usuario.</param>
+	<param name="pprimerApellido">Primer apellido del usuario.</param>
+	<param name="psegundoApellido">Segundo apellido del usuario.</param>
+	<param name="pcorreo">Correo electrónico del usuario.</param>
+	<param name="pnombreUsuario">Nombre de usuario que tendra en el sistema.</param>
+	<param name="pcodigoRol">Código del rol que se le asigno al usuario.</param>
+	<param name="pcodigoDep">Código del departamento que se le asigno al usuario.</param>
+</member><member name="M:SSLogica.Gestor.generarContrasenna(System.String)">
+	<summary>
+ Genera la contraseña para el usuario.
+ </summary>
+	<param name="pnombre">
+ Nombre del usuario para agregarla a la contraseña.
+ </param>
+	<returns>Un String con la contraseña generada</returns>
+</member><member name="M:SSLogica.Gestor.generarClaveDeAcceso(System.String)">
+	<summary>
+ Genera la contraseña para el usuario.
+ </summary>
+	<param name="pnombre">
+ Nombre del usuario para agregarla a la contraseña.
+ </param>
+	<returns>Un String con la contraseña generada</returns>
+</member><member name="M:SSLogica.Gestor.modificarUsuario(System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.Int32)">
+	<summary>
+ Modifica los datos de un usuario.
+ </summary>
+	<param name="pcedula">Nueva cédula del usuario.</param>
+	<param name="pnombre">Nuevo nombre del usuario.</param>
+	<param name="pprimerApellido">Nuevo primer apellido del usuario.</param>
+	<param name="psegundoApellido">Nuevo segundo apellido del usuario.</param>
+	<param name="pcorreo">Nuevo correo electrónico del usuario.</param>
+	<param name="pnombreUsuario">Nuevo nombre de usuario que tendra en el sistema.</param>
+	<param name="pcodigoRol">Nuevo código del rol.</param>
+	<param name="pcodigoDep">Nuevo código del departamento.</param>
+</member><member name="M:SSLogica.Gestor.eliminarUsuario(System.Int32)">
+	<summary>
+ Elimina un usuario del sistema.
+ </summary>
+	<param name="pid">
+ Es la identificación que se le pone al usuario en la base de datos..
+ </param>
+</member><member name="M:SSLogica.Gestor.usuarioEsOwner(System.Int32)">
+	<summary>
+ Comprueba al eliminar un usuario si este es el mismo con que 
+ ingreso al sistema.
+ </summary>
+	<param name="pid">
+ Es la identificación que se le pone al usuario en la base de datos..
+ </param>
+	<returns>Falso o Verdadero</returns>
+</member><member name="M:SSLogica.Gestor.generarXML(System.Int32,System.String)">
+	<summary>
+ Genera un documento XML con los datos de cada uno de los ejemplares
+ de una encuesta.
+ </summary>
+	<param name="pcodigoEncuesta">Es el que se le pone a la encuesta en la base de datos.</param>
+	<param name="pubicacionXML">Ubicación donde se guardara el archivo XML</param>
+</member><member name="M:SSLogica.Gestor.exportarAExcel(System.Collections.Hashtable)">
+	<summary>
+ Exporta los datos de una encuesta tabulada a una
+ hoja de Excel.
+ </summary>
+	<param name="pdatosEncuesta">Es el que se le pone a la encuesta en la base de datos.</param>
+</member><member name="M:SSLogica.Gestor.cargarRoles">
+	<summary>
+ Carga los roles de la base de datos
+ </summary>
+	<returns>List(Of Array) con todos los roles en la base de datos.</returns>
+</member><member name="M:SSLogica.Gestor.comprobarBDSurveySystem">
+	<summary>
+ Verifica que la base de datos BDSurveySystem este en el servidor.
+ </summary>
+</member><member name="M:SSLogica.Gestor.enviarCorreoConHTML(System.String,System.String,SSLogica.Usuario,System.Int32)">
+	<summary>
+ Envia un email personalizado al correo electrónico del usuario.
+ </summary>
+	<param name="ptipoNotificacion">
+ Tipo de notificación que se enviara al usuario, estas pueden ser: 
+ - NuevoUsuario.
+ - RecuperarContrasenna.
+ - EncargadoConfeccion
+ - EncargadoSeguimiento
+ - EncargadoAnalisis
+ - EnlaceYContrasenna
+ - ModificacionMuestra
+ </param>
+	<param name="pobjUsuario">Usuario al que se le enviara el correo.</param>
+</member><member name="M:SSLogica.Gestor.enviarCorreoClaveAcceso(System.String,SSLogica.Acceso,System.String)">
+	<summary>
+ Envia un email notificando la clave de acceso al usuairo.
+ </summary>
+	<param name="pacceso">Usuario al que se le enviara el correo.</param>
+</member><member name="M:SSLogica.Gestor.remplazarImagenes(System.Net.Mail.AlternateView@,System.String)">
+	<summary>
+ Remplaza las variable indicadas en el HTML por sus respectivas imagenes.
+ </summary>
+	<param name="phtmlView">Es el HTML donde vamos a remplazar las imagenes.</param>
+	<param name="ptipoNotificacion">
+ Tipo de notificación que se enviara al usuario, estas pueden ser: 
+ - NuevoUsuario.
+ - RecuperarContrasenna.
+ - EncargadoConfeccion.
+ - EncargadoSeguimiento.
+ - EncargadoAnalisis.
+ - EnlaceYContrasenna.
+ - ModificacionMuestra.
+ </param>
+</member><member name="M:SSLogica.Gestor.cargarBodyHTML(System.String,SSLogica.Usuario,System.Int32)">
+	<summary>
+ Carga el texto HTML que viene en el objReader.
+ </summary>
+	<param name="ptipoNotificacion">Tipo de notificacion.</param>
+	<returns>String con el texto HTML</returns>
+</member><member name="M:SSLogica.Gestor.cargarHTML(System.IO.StreamReader)">
+	<summary>
+ Carga un archivo externo con la extencion .html.
+ </summary>
+	<param name="pobjReader">Objeto con la ruta donde esta el archivo externo.</param>
+	<returns>String con el texto HTML</returns>
+</member><member name="M:SSLogica.Gestor.industriaRegistrar(System.String)">
+	<summary>Registro de una industria</summary>
+	<param name="ptipoIndustria">Tipo de industria</param>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 23-10-2010
+ Última modificacion: 24-10-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.industriaEliminar(System.String)">
+	<summary>Eliminación de una industria</summary>
+	<param name="pcodigo">Código de una industria</param>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 23-10-2010
+ Última modificacion: 24-10-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.industriaModificar(System.Int32,System.String)">
+	<summary>Modificación de una industria</summary>
+	<param name="ptipo">Tipo de industria</param>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 23-10-2010
+ Última modificacion: 24-10-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.industriaCargar">
+	<summary>Lista de atributos de industrias almacenadas previamente en la base de datos</summary>
+	<returns>Lista de datos de cada industria</returns>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 23-10-2010
+ Última modificacion: 24-10-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.industriaBuscar(System.String)">
+	<summary>Búsqueda de industrias según un criterio</summary>
+	<param name="pcriterio">Criterio por el cuál se realiza la búsqueda</param>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 23-10-2010
+ Última modificacion: 24-10-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.industriasListar">
+	<summary>Listar industrias</summary>
+	<returns>Lista de industrias</returns>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 23-10-2010
+ Última modificacion: 24-10-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.industriaDevolverCodigo(System.String)">
+	<summary>Devuelve el código de una industria</summary>
+	<param name="ptipo">Tipo de industria</param>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 23-10-2010
+ Última modificacion: 24-10-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.empresaRegistrar(System.String,System.String,System.String,System.Int32)">
+	<summary>Registro de una empresa</summary>
+	<param name="pnombre">Nombre de la empresa</param>
+	<param name="pdireccion">Dirección física de la empresa</param>
+	<param name="ptelefono">Teléfono de la empresa</param>
+	<param name="pidIndustria">Código de la industria asociada</param>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 23-10-2010
+ Última modificacion: 24-10-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.empresaModificar(System.Int32,System.String,System.String,System.String,System.Int32)">
+	<summary>Modificar una empresa</summary>
+	<param name="pcodigo">Código asignado a la empresa</param>
+	<param name="pnombre">Nombre de la empresa</param>
+	<param name="pdireccion">Dirección física de la empresa</param>
+	<param name="ptelefono">Teléfono de la empresa</param>
+	<param name="pidIndustria">Código de la industria asociada</param>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 23-10-2010
+ Última modificacion: 24-10-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.empresaEliminar(System.Int32)">
+	<summary>Eliminación de una empresa</summary>
+	<param name="pcodigo">Código de la empresa</param>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 23-10-2010
+ Última modificacion: 24-10-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.empresasCargar">
+	<summary>Cargar los datos de una empresa</summary>
+	<returns>Datos de una empresa</returns>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 23-10-2010
+ Última modificacion: 24-10-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.empresaBuscar(System.Object)">
+	<summary>Buscar una empresa</summary>
+	<param name="pcriterio">Criterio por el cuál se realiza la búsqueda</param>
+	<returns>Lista de empresas</returns>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 23-10-2010
+ Última modificacion: 24-10-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.empresaDevolverCodigo(System.String)">
+	<summary>Devuelve el código de una empresa</summary>
+	<param name="pnombre">Nombre de empresa</param>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 23-10-2010
+ Última modificacion: 24-10-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.cargarPeriodos">
+	<summary>
+ Este método carga en una lista de array los datos de los periodos existentes en la base de datos.
+ </summary>
+	<returns>Lista de objetos Array</returns>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 20-10-2010
+ Última modificación: 20-10-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.encuestaRegistrar(System.String,System.DateTime,System.DateTime,System.Int32,System.Int32,System.Double,System.Int32,System.Boolean,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+	<summary>
+ Este método manda la solicitud al MultiEncuesta para el registro de una encuesta.
+ </summary>
+	<param name="pnombre">Nombre</param>
+	<param name="pfechaInicio">Fecha de inicio</param>
+	<param name="pfechaFin">Fecha de fin</param>
+	<param name="ppoblacion">Población</param>
+	<param name="pmuestraOriginal">Muestra original</param>
+	<param name="pmargenErrorOriginal">Margen de error original</param>
+	<param name="pdiasParaAnalisis">Cantidad de días para análisis</param>
+	<param name="pvalida">Encuesta valida</param>
+	<param name="pproposito">Propósito</param>
+	<param name="pidTema">ID del tema</param>
+	<param name="pidParametrizador">ID del parametrizador</param>
+	<param name="pidEncargadoConfeccion">ID del encargado de confección</param>
+	<param name="pidEncargadoSeguimiento">ID del encargado de seguimiento</param>
+	<param name="pidEncargadoAnalisis">ID del encargado de análisis</param>
+	<param name="pidPeriodo">ID del periodo</param>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 20-10-2010
+ Última modificación: 20-10-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.encuestaBuscarPorCriterio(System.String)">
+	<summary>
+ Este método envía la solicitud al MultiEncuesta para buscar una encuesta a partir de un criterio el cual puede ser nombre o tema.
+ </summary>
+	<param name="pvalor">Valor del criterio</param>
+	<returns>Lista de objetos Encuesta</returns>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 20-10-2010
+ Última modificación: 20-10-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.encuestaBuscarPorCriterio(System.String,System.String)">
+	<summary>
+ Este método envía la solicitud al MultiEncuesta para buscar una encuesta a partir de un criterio el cual puede ser nombre o tema.
+ </summary>
+	<param name="pvalor">Valor del criterio</param>
+	<returns>Lista de objetos Encuesta</returns>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 20-10-2010
+ Última modificación: 20-10-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.encuestaBuscar(System.String)">
+	<summary>
+ Este método envía la solicitud al MultiEncuesta para buscar una encuesta a partir de un nombre.
+ </summary>
+	<param name="pnombre">Nombre</param>
+	<returns>Objeto Encuesta</returns>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 20-10-2010
+ Última modificación: 20-10-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.encuestaListar(System.String)">
+	<summary>
+ Este método envía la solicitud al MultiEncuesta para listar todas las encuestas existentes en la base de datos.
+ </summary>
+	<returns>Lista de objetos Encuesta</returns>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 20-10-2010
+ Última modificación: 20-10-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.encuestaModificar(SSLogica.Encuesta)">
+	<summary>
+ Este método se encarga enviar la solicitud al MultiEncuesta para modificar los datos de una encuesta en la base de datos.
+ </summary>
+	<param name="pencuesta">Objeto Encuesta</param>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 20-10-2010
+ Última modificación: 20-10-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.institucionRegistrar(System.String,System.String,System.String)">
+	<summary>
+ Este método envía la solicitud al MultiInstitucionInteresada para registrar una institución interesada en la base de datos.
+ </summary>
+	<param name="pnombre">Nombre</param>
+	<param name="pdireccion">Dirección</param>
+	<param name="ptelefono">Teléfono</param>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 20-10-2010
+ Última modificación: 20-10-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.institucionEliminar(System.String)">
+	<summary>
+ Este método se encarga de enviar la solicitud al MultiInstitucionInteresada para eliminar una institución interesada.
+ </summary>
+	<param name="pnombre">Nombre</param>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 20-10-2010
+ Última modificación: 20-10-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.listarInstituciones">
+	<summary>
+ Este método envía la solicitud al MultiInstitucionInteresada para listar todas las instituciones interesadas existentes en la base de datos.
+ </summary>
+	<returns>Lista de objetos Array</returns>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 20-10-2010
+ Última modificación: 20-10-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.institucionesBuscarPorCriterio(System.String)">
+	<summary>
+ Este método envía la solicitud busca una institución interesada a partir de un criterio el cual puede ser nombre o dirección.
+ </summary>
+	<param name="pvalor">Valor del criterio</param>
+	<returns>Lista de objetos Array</returns>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 20-10-2010
+ Última modificación: 20-10-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.institucionBuscar(System.String)">
+	<summary>
+ Este método se encarga de enviar la solicitud al MultiInstitucionInteresada para buscar una institución interesada en la base de datos.
+ </summary>
+	<param name="pnombre">Nombre</param>
+	<returns>Objeto InstitucionInteresada</returns>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 20-10-2010
+ Última modificación: 20-10-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.institucionModificar(System.String,SSLogica.InstitucionInteresada)">
+	<summary>
+ Este método envía la solicitud al MultiInstitucionInteresada de modificar los datos de una institución interesada en la base de datos.
+ </summary>
+	<param name="pnombreTemp">Nombre temporal de la institución</param>
+	<param name="pinsti">Objeto instituciónInteresada</param>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 20-10-2010
+ Última modificación: 20-10-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.iniciarSesion(System.String,System.String)">
+	<summary>
+ Iniciar sesion desde el modulo web
+ </summary>
+	<param name="pusuario">nombre de usuario </param>
+	<param name="pcontrasena">usuario</param>
+	<returns name="resultado">resultado</returns>
+	<remarks>Creado por: Esteban Lopez, Creado: 24/10/2010, Modificado:  </remarks>
+</member><member name="M:SSLogica.Gestor.registrarTema(System.String)">
+	<sumary>
+ Registra un nuevo tema a la base de datos
+ <param name="pnombre">nombre de tema </param>
+	</sumary>
+	<remarks>Creado por:  Carlos Dominguez Lara , Fecha: 21/10/2010, Modificado: 29/11/2010</remarks>
+</member><member name="M:SSLogica.Gestor.modificarTema(System.Int32,System.String)">
+	<sumary>
+ Modifica un tema que esta registrado en la base
+ </sumary>
+	<param name="pcodigoTema">Codigo del tema que se va a modificar</param>
+	<param name="pnombreTema">Nombre del tema </param>
+	<remarks>Creado por:  Carlos Dominguez Lara , Fecha: 21/10/2010, Modificado: 29/11/2010</remarks>
+</member><member name="M:SSLogica.Gestor.eliminarTema(System.Int32)">
+	<sumary>
+ Elimina un tema de la base de datos
+ </sumary>
+	<param name="pcodigo">Codigo del tema que se va a eliminar</param>
+	<remarks>Creado por:  Carlos Dominguez Lara , Fecha: 21/10/2010, Modificado: 29/11/2010</remarks>
+</member><member name="M:SSLogica.Gestor.cargarTemasPorCriterio(System.String)">
+	<summary>
+ Lista los temas segun el criterio de busqueda que se le envie.
+ </summary>
+	<param name="pcriterio">Criterio de busqueda que se utilizara</param>
+	<returns>Un List(Of Array) Con los datos de las encuestas</returns>
+	<remarks>Creado por:  Carlos Dominguez Lara , Fecha: 21/10/2010, Modificado: 29/11/2010</remarks>
+</member><member name="M:SSLogica.Gestor.cargarProductosPorCriterio(System.String)">
+	<summary>
+ Lista los productos segun el criterio de busqueda que se le envie.
+ </summary>
+	<param name="pcriterio">Criterio de busqueda que se utilizara</param>
+	<returns>Un List(Of Array) Con los datos de las encuestas</returns>
+	<remarks>Creado por:  Carlos Dominguez Lara , Fecha: 21/10/2010, Modificado: 29/11/2010</remarks>
+</member><member name="M:SSLogica.Gestor.registrarProducto(System.String,System.String,System.String,System.Int32)">
+	<sumary>
+ Registra un nuevo producto a la base de datos
+ </sumary>
+	<param name="pnombre">Nombre del nuevo producto</param>
+	<param name="pmarca">Marca del producto</param>
+	<param name="pfabricante">Fabricante del producto</param>
+	<param name="pcodigoTema">Código del tema al que pertenece el producto</param>
+	<remarks>Creado por:  Carlos Dominguez Lara , Fecha: 21/10/2010, Modificado: 29/11/2010</remarks>
+</member><member name="M:SSLogica.Gestor.eliminarProducto(System.Int32)">
+	<sumary>
+ Elimina un producto de la base de datos
+ </sumary>
+	<param name="pcodigo">Codigo del producto que se va a eliminar</param>
+</member><member name="M:SSLogica.Gestor.modificarProducto(System.Int32,System.String,System.String,System.String,System.Int32)">
+	<sumary>
+ Modifica un producto que esta registrado en la base
+ </sumary>
+	<param name="pcodigoProducto">Codigo del producto que se va a modificar</param>
+	<param name="pnombre">Nombre del prpoducto </param>
+	<remarks>Creado por:  Carlos Dominguez Lara , Fecha: 21/10/2010, Modificado: 29/11/2010</remarks>
+</member><member name="M:SSLogica.Gestor.buscarPreguntas(System.Int32)">
+	<sumary>
+ Carga las preguntas de una encuesta
+ </sumary>
+	<param name="pcodigoEncuesta">Codigo de la encuesta</param>
+	<remarks>Creado por:  Carlos Dominguez Lara , Fecha: 21/10/2010, Modificado: 29/11/2010</remarks>
+</member><member name="M:SSLogica.Gestor.validarAccesoAEncuesta(System.String,System.String)">
+	<summary>
+ Valida el acceso para responder una encuesta
+ </summary>
+	<param name="pcorreoContacto">Correo del contacto que respondera la encuesta</param>
+	<param name="pclaveAcceso">Clave del acceso a la encuesta</param>
+	<returns>Los datos del acceso: CodigoEjemplar, NombreEncuesta, PropositoEncuesta</returns>
+	<remarks>Creado por:  Carlos Dominguez Lara , Fecha: 21/10/2010, Modificado: 29/11/2010</remarks>
+</member><member name="M:SSLogica.Gestor.registrarRespuestas(System.Collections.Generic.List{System.Array})">
+	<summary>
+ Registra las respuestas de un ejemplar
+ </summary>
+	<param name="pdatosRespuestas">Un List(Of Array) con las respuestas del ejemplar</param>
+	<remarks>Creado por:  Carlos Dominguez Lara , Fecha: 21/10/2010, Modificado: 29/11/2010</remarks>
+</member><member name="M:SSLogica.Gestor.bloquearClave(System.Int32)">
+	<summary>
+ Bloquea un ejemplar una vez que ha sido contestado
+ </summary>
+	<param name="pcodigoEjemplar">Cdoigo del ejemplar</param>
+	<remarks>Creado por:  Carlos Dominguez Lara , Fecha: 21/10/2010, Modificado: 29/11/2010</remarks>
+</member><member name="M:SSLogica.Gestor.encriptarClave(System.String)">
+	<summary>
+ Metodo que realiza la encriptación  utilizando MD5
+ </summary>
+	<param name="ptexto">String a encriptar</param>
+	<returns>String encriptado</returns>
+	<remarks>Creado por:  Carlos Dominguez Lara , Fecha: 21/10/2010, Modificado: 29/11/2010</remarks>
+</member><member name="M:SSLogica.Gestor.encuestaBuscarParaComparar(System.Int32,System.Int32,System.Int32)">
+	<summary>
+ Este método envía la solicitud al MultiEncuesta para listar todas las encuestas existentes en la base de datos.
+ </summary>
+	<param name="pcodEncuesta">Codigo de la encuesta que se quiere excluir en la busqueda</param>
+	<param name="pcodPeriodo">Codigo del periodo de la encuesta</param>
+	<param name="pcodTema">Codigo del tema de la encuesta</param>
+	<returns>Lista de objetos Encuesta</returns>
+	<remarks>
+ Autor: Carlos Dominguez
+ Versión: 1.0
+ Fecha de creación: 20-10-2010
+ Última modificación: 20-10-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.encuestasBuscarPorEstado(System.String,System.String)">
+	<summary>Búsqueda de encuestas según el estado </summary>
+	<param name="pcriterio">Criterio por el cuál se realiza la búsqueda</param>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 15-11-2010
+ Última modificacion: 15-11-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.encuestasBuscarPorNombre(System.String,System.String,System.Int32)">
+	<summary>Búsqueda de encuestas según el nombre</summary>
+	<param name="pcriterio">Criterio por el cuál se realiza la búsqueda</param>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 15-11-2010
+ Última modificacion: 15-11-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.preguntaBuscarPorId(System.Int32)">
+	<summary>Búsca las preguntas del cuestionario de una encuesta según el codigo de la encuesta</summary>
+	<param name="pcriterio">Criterio por el cuál se realiza la búsqueda</param>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 15-11-2010
+ Última modificacion: 15-11-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.listarPreguntasSegunTema(System.String,System.String)">
+	<summary>Lista las preguntas registradas según tema</summary>
+	<param name="ptema">Tema por el que se realiza la búsqueda</param>
+	<param name="pnombre">Nombre de la pregunta</param>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 16-11-2010
+ Última modificacion: 16-11-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.listarPreguntasDeEncuesta(System.Int32)">
+	<summary>Lista las preguntas registradas según tema</summary>
+	<param name="pencuesta">Encuesta a la que se asocian las preguntas</param>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 2.0
+ fecha de Creacion: 16-11-2010
+ Última modificacion: 16-11-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.devolverCodigoPregunta(System.String)">
+	<summary>Devuelve el código de una pregunta</summary>
+	<param name="ptextoPregunta">Descripción de la pregunta</param>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 20-11-2010
+ Última modificacion: 20-11-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.cargarIdTemaPorNombre(System.String)">
+	<summary>Devuelve el codigo de un tema según el nombre</summary>
+	<param name="ptexto">Descripción del tema</param>
+	<returns>Codigo del tema </returns>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 20-11-2010
+ Última modificacion: 20-11-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.listarProductosPorTema(System.Int32)">
+	<summary>Lista los productos segun tema</summary>
+	<param name="codTema">Codigo del tema</param>
+	<returns>Lista de productos</returns>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 16-11-2010
+ Última modificacion: 16-11-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.devolverCodigoProducto(System.String)">
+	<summary>Devuelve el código de un producto a partir del nombre</summary>
+	<param name="pnombreProducto">Nombre del producto</param>
+	<returns>Codigo del producto</returns>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 20-11-2010
+ Última modificacion: 20-11-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.modificarPreguntaDeCuestionario(SSLogica.Pregunta)">
+	<summary>Modificar la pregunta de un cuestionario</summary>
+	<param name="ppregunta">Objeto pregunta</param>
+	<exception cref="T:System.Data.SqlClient.SqlException">Se lanza cuando hay errores en la inserción de los datos</exception>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 23-10-2010
+ Última modificacion: 24-10-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.modificarOpcionDePregunta(SSLogica.Opcion)">
+	<summary>Modificar la pregunta de un cuestionario</summary>
+	<param name="popc">Objeto opción</param>
+	<exception cref="T:System.Data.SqlClient.SqlException">Se lanza cuando hay errores en la inserción de los datos</exception>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 23-10-2010
+ Última modificacion: 24-10-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.permiteModificar(System.Int32)">
+	<summary>Verifica si se puede modificar una pregunta</summary>
+	<param name="pcodPregunta">Código de la pregunta</param>
+	<exception cref="T:System.Data.SqlClient.SqlException">Se lanza cuando hay errores en la inserción de los datos</exception>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 23-10-2010
+ Última modificacion: 24-10-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.listarOpcionesPorPregunta(System.Int32)">
+	<summary>Lista las opciones pertenecientes a una pregunta</summary>
+	<param name="ppregunta">Codigo de la pregunta</param>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 16-11-2010
+ Última modificacion: 16-11-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.devolverCodOpcionPorProducto(System.String)">
+	<summary>Devuelve el código una opcion a partir del nombre del producto</summary>
+	<param name="pnombreProducto">Nombre del producto</param>
+	<returns>Codigo del producto</returns>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 20-11-2010
+ Última modificacion: 20-11-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.devolverCodOpcionPorTexto(System.String)">
+	<summary>Devuelve el código una opcion a partir de la descripcion de la opcion</summary>
+	<param name="ptexto">Texto descriptivo</param>
+	<returns>Codigo del producto</returns>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 20-11-2010
+ Última modificacion: 20-11-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.encuestasBuscarParaClonar(System.String,System.Int32)">
+	<summary>Búsqueda de encuestas según el nombre</summary>
+	<param name="pcriterio">Criterio por el cuál se realiza la búsqueda</param>
+	<param name="ptema">Tema al que pertenece la encuesta</param>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 15-11-2010
+ Última modificacion: 15-11-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.clonarCuestionario(System.Int32,System.Int32)">
+	<summary>Clonar un cuestionario</summary>
+	<param name="pcuestionarioOriginal">Código del cuestionario ejemplo para la clonación</param>
+	<param name="pcuestionarioNuevo">Código del nuevo cuestionario</param>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 15-11-2010
+ Última modificacion: 15-11-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.crearCuestionario(System.Int32)">
+	<summary>Registrar un cuestionario</summary>
+	<param name="pcodEncuesta">Código de la encuesta a la que se relaciona el cuestionario</param>
+	<returns>Si se hizo el registro, o ya estaba</returns>
+	<remarks> 
+ Autor: Jose Eduardo Fallas 
+ Versión: 1.0
+ fecha de Creacion: 20-11-2010 
+ Última modificacion: 20-11-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.preguntaBuscar(System.String)">
+	<summary>Busca y devuelve una pregunta</summary>
+	<param name="pcodPregunta">Código de la pregunta</param>
+	<returns>Código del producto</returns>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 20-11-2010
+ Última modificacion: 20-11-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.opcionBuscar(System.Int32)">
+	<summary>Busca y devuelve una opción</summary>
+	<param name="pcodOpcion">Código de la opción</param>
+	<returns>Código del producto</returns>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 20-11-2010
+ Última modificacion: 20-11-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.usuarioBuscar(System.Int32)">
+	<summary>Busca y devuelve una usuario</summary>
+	<param name="pcodUsuario">Código del usuario</param>
+	<returns>Usuario</returns>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 20-11-2010
+ Última modificacion: 20-11-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.devolverCodigoOpcionProducto">
+	<summary>Busca y devuelve la ultima opcion registrada</summary>
+	<returns>Objeto Producto</returns>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 20-11-2010
+ Última modificacion: 20-11-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.buscarProductoPorOpcion(System.Int32,System.Int32)">
+	<summary>Busca la opcion a la que se encuetra asociada un producto</summary>
+	<returns>Objeto Producto</returns>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 27-11-2010
+ Última modificacion: 27-11-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.cambiarEstadoEncuestaASeguimiento(System.Int32)">
+	<summary>Cambia el estado de una encuesta de confección a seguimiento</summary>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 30-11-2010
+ Última modificacion: 30-11-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.obtenerInfoEstadistica(System.Int32)">
+	<summary>
+ Obtiene la información estadística de una encuesta.
+ </summary>
+	<param name="pidEncuesta">ID de la encuesta</param>
+	<returns>Hashtable</returns>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 01-12-2010
+ Última modificación: 01-12-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.calcularModa(SSLogica.Pregunta,System.Collections.Generic.List{SSLogica.Ejemplar})">
+	<summary>
+ Calcula la moda
+ </summary>
+	<param name="ppregunta">Obj Pregunta</param>
+	<param name="pejemplares">Lista de ejemplares</param>
+	<returns>String</returns>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 01-12-2010
+ Última modificación: 01-12-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.calcularMedia(SSLogica.Pregunta,System.Collections.Generic.List{SSLogica.Ejemplar})">
+	<summary>
+ Calcula la media
+ </summary>
+	<param name="ppregunta">Obj Pregunta</param>
+	<param name="pejemplares">Lista de ejemplares</param>
+	<returns>String</returns>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 01-12-2010
+ Última modificación: 01-12-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.calcularPercentil(System.Int32,SSLogica.Pregunta,System.Collections.Generic.List{SSLogica.Ejemplar})">
+	<summary>
+ Calcula el percentil
+ </summary>
+	<param name="ppregunta">Obj Pregunta</param>
+	<param name="pejemplares">Lista de ejemplares</param>
+	<returns>String</returns>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 01-12-2010
+ Última modificación: 01-12-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.calcularMediana(SSLogica.Pregunta,System.Collections.Generic.List{SSLogica.Ejemplar})">
+	<summary>
+ Calcula la mediana
+ </summary>
+	<returns>Double</returns>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 01-12-2010
+ Última modificación: 01-12-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.respuestaPorPreguntaEjemplar(System.Int32,System.Int32)">
+	<summary>
+ Devuelve las respuestas a partir de un ejemplar y pregunta.
+ </summary>
+	<param name="pidEjemplar">id del ejemplar</param>
+	<param name="pidPregunta">id de la pregunta</param>
+	<returns>lista de objetos Respuesta</returns>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 01-12-2010
+ Última modificación: 01-12-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.obtenerAbiertasPorEncuesta(System.Int32)">
+	<summary>
+ Devuelve las preguntas abiertas de una encuesta.
+ </summary>
+	<param name="pidEncuesta">id de la encuesta</param>
+	<returns>lista de objetos Pregunta</returns>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 01-12-2010
+ Última modificación: 01-12-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.respuestaRegistrar(System.Int32,System.String,System.Int32,System.Int32)">
+	<summary>
+ Registra una respuesta en el sistema.
+ </summary>
+	<param name="pcodigoEjemplar">id del ejemplar</param>
+	<param name="ptextoRespuesta">texto de la respuesta</param>
+	<param name="pcodigoPregunta">id de la pregunta</param>
+	<param name="pcodigoOpcion">id de la opcion</param>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 01-12-2010
+ Última modificación: 01-12-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.preguntaMarcarComoTabulada(System.Int32)">
+	<summary>
+ Marca una pregunta como tabulada a partir del id de la misma.
+ </summary>
+	<param name="pidPregunta">id de la pregunta</param>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 01-12-2010
+ Última modificación: 01-12-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.listarPreguntasPorEncuesta(System.Int32)">
+	<summary>
+ Este método retorna los datos de todas las preguntas asociadas a una encuesta.
+ </summary>
+	<param name="pidEncuesta">ID de la encuesta</param>
+	<returns>Lista de datos de las preguntas</returns>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 12-11-2010
+ Última modificación: 12-11-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.tabularMasivo(System.Int32)">
+	<summary>
+ Realiza la tabulación de una encuesta según el ID.
+ </summary>
+	<param name="pidEncuesta">ID de la encuesta</param>
+	<returns>Hasttable</returns>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 13-11-2010
+ Última modificación: 13-11-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.encuestaListarWeb(System.String)">
+	<summary>
+ Este método envía la solicitud al MultiEncuesta para listar todas las encuestas existentes en la base de datos.
+ Confección - Seguimiento - Análisis - Finalizada
+ </summary>
+	<returns>Lista de objetos Encuesta</returns>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 20-10-2010
+ Última modificación: 20-10-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.esModificable(System.Int32)">
+	<summary>
+ Verifica si la pregunta ya está asociada a algun cuestionario.
+ </summary>
+	<param name="pidPregunta">ID de la pregunta</param>
+	<returns>Si es modificable o no</returns>
+	<remarks>
+ Autor: Elias Gomez Castro
+ Versión: 1.0
+ fecha de Creacion: 23-11-2010
+ Última modificacion: 23-11-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.buscarPregunta(System.Int32)">
+	<summary>
+ Metodo que retorna un objeto Pregunta a partir del codigo.
+ </summary>
+	<param name="pcodPregunta">id de la pregunta</param>
+	<returns>Pregunta</returns>
+	<remarks>
+ Autor: Elias Gomez Castro
+ Versión: 1.0
+ fecha de Creacion: 23-11-2010
+ Última modificacion: 23-11-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.modificarPregunta(System.Int32,System.String,System.Int32,System.Int32)">
+	<summary>
+ Metodo que modifica los datos de una pregunta en el sistema.
+ </summary>
+	<param name="pcodPregunta">id de la pregunta</param>
+	<param name="pdescripcion">texto de la pregunta</param>
+	<param name="ptipoPregunta">id del tipo de pregunta</param>
+	<param name="pcodTema">id del tema de la pregunta</param>
+	<remarks>
+ Autor: Elias Gomez Castro
+ Versión: 1.0
+ fecha de Creacion: 23-11-2010
+ Última modificacion: 23-11-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.asociarPreguntaACuestionario(System.Int32,System.Int32)">
+	<summary>Asocia una pregunta al cuestionario</summary>
+	<param name="pencuesta">Código de encuesta</param>
+	<param name="ppregunta">Código de pregunta</param>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 20-11-2010
+ Última modificacion: 20-11-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.devolverCodigoTipoPregunta(System.String)">
+	<summary>Devuelve el código de un tipo de pregunta</summary>
+	<param name="ptextoPregunta">Descripción de la pregunta</param>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 20-11-2010
+ Última modificacion: 20-11-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.listarTiposPregunta">
+	<summary>Lista los tipos de pregunta</summary>
+	<returns>Lista de tipos de pregunta</returns>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 16-11-2010
+ Última modificacion: 16-11-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.listarTemas">
+	<summary>Lista los temas existentes</summary>
+	<returns>Lista Tema</returns>
+	<remarks>
+ Autor: Elias Gomez Castro
+ Versión: 1.0
+ fecha de Creacion: 23-11-2010
+ Última modificacion: 23-11-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.registrarPregunta(System.String,System.Int32,System.Int32)">
+	<summary>Registrar una pregunta</summary>
+	<param name="pdescripcion">Descripción de la pregunta</param>
+	<param name="pcodTema">Código del tema</param>
+	<param name="ptipoPregunta">Codigo del tipo de tema</param>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 20-11-2010
+ Última modificacion: 20-11-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.registrarOpcion(System.String,System.Int32)">
+	<summary>Registrar una opcion</summary>
+	<param name="ptextoOpcion">Opcion de producto</param>
+	<param name="pcodProducto">Código del tema</param>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 20-11-2010
+ Última modificacion: 20-11-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.asociarOpcionConPregunta(System.Int32,System.Int32)">
+	<summary>Asociar una opción con una pregunta</summary>
+	<param name="pcodOpcion">Código de la opción</param>
+	<param name="pcodPregunta">Código de la pregunta</param>
+	<exception cref="T:System.Data.SqlClient.SqlException">Se lanza cuando hay errores en la inserción de los datos</exception>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 23-10-2010
+ Última modificacion: 24-10-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.eliminarPreguntaDeCuestionario(System.Int32,System.Int32)">
+	<summary>Eliminar la asociacion de una pregunta con el cuestionario</summary>
+	<param name="pcodPregunta">Código de la pregunta a la que está relacionado</param>
+	<param name="pcodCuestionario">Código del cuestionario</param>
+	<exception cref="T:System.Data.SqlClient.SqlException">Se lanza cuando hay errores en la inserción de los datos</exception>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 23-10-2010
+ Última modificacion: 24-10-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.eliminarOpcionDePregunta(System.Int32,System.Int32)">
+	<summary>Eliminar la asociacion de una opción con una pregunta</summary>
+	<param name="pcodPregunta">Codigo de la pregunta</param>
+	<param name="pcodOpcion">Codigo de la opción</param>
+	<exception cref="T:System.Data.SqlClient.SqlException">Se lanza cuando hay errores en la inserción de los datos</exception>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 23-10-2010
+ Última modificacion: 24-10-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.listarPreguntas">
+	<summary>Lista las preguntas registradas en el sistema</summary>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 16-11-2010
+ Última modificacion: 16-11-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.eliminarPregunta(System.Int32)">
+	<summary>
+ Este método elimina una pregunta segun id.
+ </summary>
+	<param name="pcodigo">id de la pregunta</param>
+	<remarks>
+ Autor: Elias Gomez Castro
+ Versión: 1.0
+ fecha de Creacion: 21-11-2010
+ Última modificacion: 21-11-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.subirArchivo(System.Byte[],System.String,System.Int32)">
+	<summary>
+ Método que sube un archivo al sistema.
+ </summary>
+	<param name="parchivo">archivo</param>
+	<param name="pruta">ruta del archivo</param>
+	<param name="pidEncuesta">id de la encuesta</param>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 20-11-2010
+ Última modificación: 20-11-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.bajarArchivo(System.Int32,System.String)">
+	<summary>
+ Método que baja un archivo desde la base de datos.
+ </summary>
+	<param name="pidEncuesta">Id de la encuesta a la que pertenece el archivo</param>
+	<returns>Archivo y extension</returns>
+	<remarks> 
+ Autor: Elias Gomez 
+ Versión: 1.0 
+ Fecha de creación: 20-11-2010
+ Última modificación: 20-11-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.tabularPregunta(SSLogica.Pregunta,System.Collections.Generic.List{SSLogica.Ejemplar})">
+	<summary>
+ Realiza la tabulación de una Pregunta de un Ejemplar de una Encuesta.
+ </summary>
+	<param name="ppregunta"></param>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 13-11-2010
+ Última modificación: 13-11-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.buscarOpcionPorCodigo(System.Int32)">
+	<summary>
+ Método que retorna un objeto Opcion a partir del codigo de la opcion.
+ </summary>
+	<param name="pid">codigo de la opcion</param>
+	<returns>Objeto Opcion</returns>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 17-11-2010
+ Última modificación: 17-11-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.encuestasBuscarPorEstadoUsuario(System.String,System.Int32)">
+	<summary>Búsqueda de encuestas según el nombre</summary>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 15-11-2010
+ Última modificacion: 15-11-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.encuestasBuscarParaGestionDeArchivos(System.Int32)">
+	<summary>Búsqueda de encuestas según el nombre</summary>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 15-11-2010
+ Última modificacion: 15-11-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.encuestaBuscarPorCodigo(System.Int32)">
+	<summary>
+ Este método envía la solicitud al MultiEncuesta para buscar una encuesta a partir de un nombre.
+ </summary>
+	<param name="pid">ID de la encuestas</param>
+	<returns>Objeto Encuesta</returns>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 20-10-2010
+ Última modificación: 20-10-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.encuestaMarcarComoFinalizada(System.Object)">
+	<summary>
+ Marca una encuesta en estado finalizada a partir del codigo
+ </summary>
+	<param name="pid">ID de la encuesta</param>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 20-10-2010
+ Última modificación: 20-10-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.cantidadEncuestasPorTemaPeriodo(System.Int32,System.Int32)">
+	<summary>
+ cantidad de encuestas por tema dado periodo
+ </summary>
+ Autor: Esteban lopez
+ Versión: 1.0
+ <param name="pcodigoTema"> parametro codigo tema</param>
+	<param name="pcodigoPeriodo"> parametro codigo periodo</param>
+	<remarks>Creado por: Esteban Lopez, Creado: 10/12/2010, Modificado:  </remarks>
+</member><member name="M:SSLogica.Gestor.cantidadEncuestasPorProfesor(System.Int32)">
+	<summary>
+ cantidad de encuestas por profesor
+ </summary>
+ Autor: Esteban lopez
+ Versión: 1.0
+ <param name="pidProfesor"> parametro codigo tema</param>
+	<remarks>Creado por: Esteban Lopez, Creado: 10/12/2010, Modificado:  </remarks>
+</member><member name="M:SSLogica.Gestor.encuestaListarPorAsistente(System.String)">
+	<summary>
+ Este método envía la solicitud al MultiEncuesta para buscar una encuesta a partir de un criterio el cual puede ser nombre o tema.
+ </summary>
+	<param name="pasistente ">id asistente</param>
+	<returns>Lista de objetos Encuesta</returns>
+	<remarks>
+ Autor: Esteban lopez
+ Versión: 1.0
+ Fecha de creación: 20-10-2010
+ Última modificación: 20-10-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.encuestaBuscarPorId(System.String)">
+	<summary>
+ Este método envía la solicitud al MultiEncuesta para buscar una encuesta a partir de un id
+ </summary>
+	<param name="pvalor">Valor del criterio</param>
+	<returns>Lista de objetos Encuesta</returns>
+	<remarks>
+ Autor: Esteban lopez 
+ Versión: 1.0
+ Fecha de creación: 12-Nov-2010
+ Última modificación: 13-Nov-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.modificarMuestra(System.Int32,System.Int32)">
+	<summary>
+ Este método envía la solicitud al MultiEncuesta para modificar la muestra.
+ </summary>
+	<param name="pmuestra">muestra</param>
+	<param name="pidEncuesta ">id de la encuesta</param>
+	<remarks>
+ Autor: Esteban lopez 
+ Versión: 1.0
+ Fecha de creación: 20-10-2010
+ Última modificación: 20-10-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.enviarNotificacionModificacionMuestra(SSLogica.Encuesta,System.String)">
+ Autor: Esteban lopez
+ Versión: 1.0
+ <summary>
+ EnviarNotificacionModificacionMuestra
+ </summary>
+	<param name="pencuesta "> parametro encuesta</param>
+	<remarks>Creado por: Esteban Lopez, Creado: 18/10/2010, Modificado:  </remarks>
+</member><member name="M:SSLogica.Gestor.enviarCorreoModificacionMuestra(System.String,System.String,System.String)">
+ Autor: Esteban lopez
+ Versión: 1.0
+ <summary>
+ Envia un correo a usuarios
+ </summary>
+	<param name="pasunto">Asunto del correo</param>
+	<param name="pcontenido">Contenido del correo</param>
+	<param name="pcorreoDestino">correo del usuario</param>
+	<remarks>Creado por: Esteban Lopez, Creado: 22/10/2010, Modificado:  </remarks>
+</member><member name="M:SSLogica.Gestor.invalidarEncuestasMorosas">
+ Autor: Esteban lopez
+ Versión: 1.0
+ <summary>
+ Invalidar encuestas morosas
+ </summary>
+	<remarks>Creado por: Esteban Lopez, Creado: 18/10/2010, Modificado:  </remarks>
+</member><member name="M:SSLogica.Gestor.realizarProrroga(System.DateTime,System.Int32)">
+	<summary>
+ Realizar prorroga
+ </summary>
+	<param name="pnuevaFecha"> nueva fecha</param>
+	<param name="pidEncuesta"> parametro codigo encuesta</param>
+	<remarks>Creado por: Esteban Lopez, Creado: 18/10/2010, Modificado:  </remarks>
+</member><member name="M:SSLogica.Gestor.contactoRegistrar(System.String,System.String,System.String,System.String,System.String,System.Int32)">
+	<summary>
+ 
+
+ Contacto Registrar
+ </summary>
+	<param name="pnombre">Nombre contacto</param>
+	<param name="pprimerApellido">Nombre del departemnto</param>
+	<param name="psegundoApellido">Nombre del departemnto</param>
+	<param name="pemail">Nombre del departemnto</param>
+	<param name="ptelefono">Nombre del departemnto</param>
+	<remarks>Creado por: Esteban Lopez, Creado: 15/10/2010, Modificado:  </remarks>
+</member><member name="M:SSLogica.Gestor.invitacionRegistrar(System.String,System.Collections.Generic.List{System.Int32})">
+	<summary>
+ Autor: Esteban lopez
+ Versión: 1.0
+ Asociar contacto a una encuesta (Invitar)
+ </summary>
+	<param name="pidEncuesta">id encuesta</param>
+	<param name="plistaIds">Lista id contactos </param>
+	<remarks>Creado por: Esteban Lopez, Creado: 15/10/2010, Modificado:  </remarks>
+</member><member name="M:SSLogica.Gestor.invitacionEliminarContactos(System.String,System.Collections.Generic.List{System.Int32})">
+ Autor: Esteban lopez
+ Versión: 1.0
+ <summary>
+ Asociar contacto a una encuesta (Invitar)
+ </summary>
+	<param name="pidEncuesta">id encuesta</param>
+	<param name="plistaIds">Lista id contactos </param>
+	<remarks>Creado por: Esteban Lopez, Creado: 15/10/2010, Modificado:  </remarks>
+</member><member name="M:SSLogica.Gestor.listarContactosInvitadosPorEncuesta(System.Object)">
+	<summary>
+ Autor: Esteban lopez
+ Versión: 1.0
+ LIstar los contactos invitados por encuesta(Invitacion)
+ </summary>
+	<param name="pidEncuesta"> parametro codigo encuesta</param>
+	<remarks>Creado por: Esteban Lopez, Creado: 18/10/2010, Modificado:  </remarks>
+</member><member name="M:SSLogica.Gestor.listarContactosQueParticiparonEnEncuesta(System.String)">
+ Autor: Esteban lopez
+ Versión: 1.0
+ <summary>
+ LIstar los contactosk han participado por encuesta(Invitacion)
+ </summary>
+	<param name="pidEncuesta"> parametro codigo encuesta</param>
+	<remarks>Creado por: Esteban Lopez, Creado: 19/10/2010, Modificado:  </remarks>
+</member><member name="M:SSLogica.Gestor.enviarEnlace(System.String,System.Collections.Generic.List{System.Int32})">
+	<summary>
+ Enviar enlace y contrasenna a un contacto
+ </summary>
+ Autor: Esteban lopez
+ Versión: 1.0
+ <param name="pidEncuesta"> parametro codigo encuesta</param>
+	<param name="plistaIds"> ids de los contactos</param>
+	<remarks>Creado por: Esteban Lopez, Creado: 19/10/2010, Modificado:  </remarks>
+</member><member name="M:SSLogica.Gestor.empresasCargarConId">
+	<summary>Cargar los datos de una empresa</summary>
+	<returns>Datos de una empresa</returns>
+	<remarks>
+ Autor: Esteban lopez
+ Versión: 1.0
+ fecha de Creacion: 25-11-2010
+ Última modificacion: 25-11-2010
+ </remarks>
+</member><member name="M:SSLogica.Gestor.notificarEncargadoDeAnalisis(System.Int32)">
+ Autor: Esteban lopez
+ Versión: 1.0
+ <summary>
+ Notificar a encargado de analisis
+ </summary>
+	<param name="pidEncuesta"> parametro codigo encuesta</param>
+	<remarks>Creado por: Esteban Lopez, Creado: 20/11/2010, Modificado:  </remarks>
+</member><member name="M:SSLogica.Gestor.enviarCorreo(System.String,System.String,System.String)">
+	<summary>
+ Enviar correo a encargado de analisis
+ </summary>
+	<param name="pasunto">Asunto del correo</param>
+	<param name="pcontenido">Contenido del correo</param>
+	<param name="pcorreoDestino">correo del usuario</param>
+	<remarks>Creado por: Esteban Lopez, Creado: 22/10/2010, Modificado:  </remarks>
+</member><member name="M:SSLogica.Gestor.enviarInvitacionEncuesta(System.String,System.Collections.Generic.List{System.Int32})">
+	<summary>
+ Enviar invitacion a un contacto
+ </summary>
+ Autor: Esteban lopez
+ Versión: 1.0
+ <param name="pidEncuesta"> parametro codigo encuesta</param>
+	<param name="plistaIds"> ids de los contactos</param>
+	<remarks>Creado por: Esteban Lopez, Creado: 27/11/2010, Modificado:  </remarks>
+</member><member name="M:SSLogica.MultiInstitucionInteresada.institucionInteresadaRegistrar(System.String,System.String,System.String)">
+	<summary>
+ Este método registra una institución interesada en la base de datos.
+ </summary>
+	<param name="pnombre">Nombre</param>
+	<param name="pdireccion">Dirección</param>
+	<param name="ptelefono">Teléfono</param>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 20-10-2010
+ Última modificación: 20-10-2010
+ </remarks>
+</member><member name="M:SSLogica.MultiInstitucionInteresada.institucionInteresadaBuscar(System.String)">
+	<summary>
+ Este método se encarga de buscar una institución interesada en la base de datos.
+ </summary>
+	<param name="pnombre">Nombre</param>
+	<returns>Objeto InstitucionInteresada</returns>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 20-10-2010
+ Última modificación: 20-10-2010
+ </remarks>
+</member><member name="M:SSLogica.MultiInstitucionInteresada.cargarInstitucion(System.Data.IDataReader)">
+	<summary>
+ Método que levanta un objeto InstitucionInteresada a partir de un IDataReader.
+ </summary>
+	<param name="dr">Objeto IDataReader</param>
+	<returns>Objeto InstitucionInteresada</returns>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 20-10-2010
+ Última modificación: 20-10-2010
+ </remarks>
+</member><member name="M:SSLogica.MultiInstitucionInteresada.institucionInteresadaEliminar(SSLogica.InstitucionInteresada)">
+	<summary>
+ Este metodo elimina una institución interesada del sistema.
+ </summary>
+	<param name="pinsti">Objeto InstitucionInteresada</param>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 20-10-2010
+ Última modificación: 20-10-2010
+ </remarks>
+</member><member name="M:SSLogica.MultiInstitucionInteresada.listarInstitucionesInteresadas">
+	<summary>
+ Este método se encarga de listar todas las instituciones interesadas existentes en la base de datos.
+ </summary>
+	<returns>Lista de objetos InstitucionInteresada</returns>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 20-10-2010
+ Última modificación: 20-10-2010
+ </remarks>
+</member><member name="M:SSLogica.MultiInstitucionInteresada.institucionBuscarPorCriterio(System.String)">
+	<summary>
+ Este método busca una institución interesada a partir de un criterio el cual puede ser nombre o dirección.
+ </summary>
+	<param name="pvalor">Valor del criterio</param>
+	<returns>Lista de objetos InstitucionInteresada</returns>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 20-10-2010
+ Última modificación: 20-10-2010
+ </remarks>
+</member><member name="M:SSLogica.MultiInstitucionInteresada.institucionInteresadaModificar(System.String,SSLogica.InstitucionInteresada)">
+	<summary>
+ Este método se encarga de modificar los datos de una institución interesada en la base de datos.
+ </summary>
+	<param name="pnombreTemp">Nombre temporal de la institución</param>
+	<param name="pinsti">Objeto instituciónInteresada</param>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 20-10-2010
+ Última modificación: 20-10-2010
+ </remarks>
+</member><member name="P:SSLogica.Cuestionario.ejemplares">
+	<summary>
+ Propiedad de la lista de objetos Ejemplar.
+ </summary>
+	<value>_tema</value>
+	<returns>lista de objetos Ejemplar</returns>
+</member><member name="P:SSLogica.Cuestionario.preguntas">
+	<summary>
+ Propiedad de la lista de objetos Pregunta.
+ </summary>
+	<value>_tema</value>
+	<returns>lista de objetos Pregunta</returns>
+</member><member name="T:SSLogica.Cuestionario">
+	<summary>
+ Clase Cuestionario
+ </summary>
+	<remarks>
+ Creado por: Carlos Domínguez Lara
+ Fecha: 19/10/2010 
+ Modificado: 19/10/2010
+ </remarks>
+</member><member name="M:SSLogica.MultiTema.registrar(System.String)">
+	<summary>
+ Registra un nuevo tema en la base de datos.
+ </summary>
+	<param name="pnombreTema">Nombre del nuevo tema</param>
+	<exception cref="T:System.Data.SqlClient.SqlException">Error con la base de datos</exception>
+</member><member name="M:SSLogica.MultiTema.modificar(SSLogica.Tema)">
+	<summary>
+ Modificar un nuevo tema en la base de datos.
+ </summary>
+	<param name="pobjTema">El objeto Tema que se desea modificar</param>
+	<exception cref="T:System.Data.SqlClient.SqlException">Error con la base de datos</exception>
+</member><member name="M:SSLogica.MultiTema.eliminar(System.Int32)">
+	<summary>
+ Elimina un tema de la base de datos.
+ </summary>
+	<param name="pcodigoTema">Código del tema que se va a eliminar</param>
+	<exception cref="T:System.Data.SqlClient.SqlException">Error con la base de datos</exception>
+</member><member name="M:SSLogica.MultiTema.listarTemas">
+	<summary>
+ Lista todos los temas registrados registrados en la base de datos.
+ </summary>
+	<returns>Un List(Of Tema) Con todos los temas</returns>
+	<exception cref="T:System.Data.SqlClient.SqlException">Error con la base de datos</exception>
+</member><member name="M:SSLogica.MultiTema.listarTemasPorCriterio(System.String)">
+	<summary>
+ Lista los temas segun el criterio de busqueda que se le envie.
+ </summary>
+	<param name="pcriterio">Criterio de busqueda que se utilizara</param>
+	<returns>Un List(Of Tema) Con todos los temas</returns>
+</member><member name="M:SSLogica.MultiTema.cargarNombreTemaPorId(System.Int32)">
+	<summary>
+ Carga el nombre de un tema por su id.
+ </summary>
+	<param name="pid">Identificacion que se le asigna al tema en la base de datos</param>
+	<returns>El nombre del tema</returns>
+	<exception cref="T:System.Exception">Error con la base de datos</exception>
+</member><member name="M:SSLogica.MultiTema.buscarPorCodProducto(System.Int32)">
+	<summary>
+ Busca un tema por el codigo de un producto.
+ </summary>
+	<param name="pcodProducto">Identificacion que se le asigna al tema en la base de datos</param>
+	<returns>El objeto tema que pertenece al producto</returns>
+	<exception cref="T:System.Exception">Error con la base de datos</exception>
+</member><member name="M:SSLogica.MultiTema.buscar(System.Int32)">
+	<summary>
+ Busca un tema por su codigo.
+ </summary>
+	<param name="pcodigo">Identificacion que se le asigna al tema en la base de datos</param>
+	<returns>El objeto tema que se encontro</returns>
+	<exception cref="T:System.Exception">Error con la base de datos</exception>
+</member><member name="M:SSLogica.MultiTema.cargarTema(System.Data.IDataReader)">
+	<summary>
+ Ayuda al multi a cargar los temas.
+ </summary>
+	<param name="dr">Resultado de la sentencia Sql</param>
+	<returns>Un objeto tema</returns>
+</member><member name="M:SSLogica.MultiRespuesta.registrar(System.Int32,System.String,System.Int32,System.Int32)">
+	<summary>
+ Registra una nueva respuesta a la base de datos
+ </summary>
+	<param name="pcodigoEjemplar">Código del ejemplar</param>
+	<param name="ptextoRespuesta">Texto de la respuesta</param>
+	<param name="pcodigoPregunta">Código de la pregunta</param>
+	<param name="pcodigoOpcion">Código de la opción</param>
+</member><member name="M:SSLogica.MultiRespuesta.obtenerPorPreguntaEjemplar(System.Int32,System.Int32)">
+	<summary>
+ Obtiene las preguntas de un ejemplar
+ </summary>
+	<param name="pcodigoEjemplar">Código del ejemplar</param>
+	<param name="pcodigoPregunta">Código de la pregunta</param>
+	<returns>Una List(Of Respuesta) con todas las preguntas encontradas.</returns>
+</member><member name="M:SSLogica.MultiRespuesta.cargarRespuesta(System.Data.IDataReader)">
+	<summary>
+ Ayuda al multi a cargar las respuestas
+ </summary>
+	<param name="dr">Objeto IDataReader con los datos de las repuestas</param>
+</member><member name="T:SSLogica.Departamento">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="T:SSLogica.Periodo">
+	<summary>
+ Clase Periodo
+ </summary>
+	<remarks>
+ Creado por: Carlos Domínguez Lara
+ Fecha: 19/10/2010 
+ Modificado: 19/10/2010
+ </remarks>
+</member><member name="M:SSLogica.MultiOpcion.asociarOpcionConPregunta(System.Int32,System.Int32)">
+	<summary>Asociar una opción con una pregunta</summary>
+	<param name="pcodOpcion">Código de la opción</param>
+	<param name="pcodPregunta">Código de la pregunta</param>
+	<exception cref="T:System.Data.SqlClient.SqlException">Se lanza cuando hay errores en la inserción de los datos</exception>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 23-10-2010
+ Última modificacion: 24-10-2010
+ </remarks>
+</member><member name="M:SSLogica.MultiOpcion.eliminarOpcionDePregunta(System.Int32,System.Int32)">
+	<summary>EliminarOpcionDePregunta</summary>
+	<param name="pcodOpcion">Código de la opción</param>
+	<param name="pcodPregunta">Código de la pregunta</param>
+	<exception cref="T:System.Data.SqlClient.SqlException">Se lanza cuando hay errores en la inserción de los datos</exception>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 23-10-2010
+ Última modificacion: 24-10-2010
+ </remarks>
+</member><member name="T:SSLogica.Contacto">
+	<summary>
+ Contacto
+ 
+ Esteban Lopez ultima modificacion 16/11/2010
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SSLogica.Ejemplar.#ctor(System.Int32,System.Int32)">
+	<summary>
+ Constructor de la clase Ejemplar
+ </summary>
+	<param name="pCodigo">Codigo</param>
+	<param name="pcodigoCuestionario">Codigo del cuestionario</param>
+</member><member name="P:SSLogica.Ejemplar.Cuestionario">
+	<summary>
+ Propiedad para el cuestionario
+ </summary>
+	<returns>Cuestionario del ejemplar</returns>
+</member><member name="P:SSLogica.Ejemplar.Codigo">
+	<summary>
+ Propiedad para el codigo del ejemplar
+ </summary>
+	<returns>Codigo del ejemplar</returns>
+</member><member name="P:SSLogica.Ejemplar.IdCuestionario">
+	<summary>
+ Propiedad para el codigo del cuestionario
+ </summary>
+	<returns>Codigo del cuestionario del ejemplar</returns>
+</member><member name="T:SSLogica.Ejemplar">
+	<summary>
+ Clase Ejemplar
+ </summary>
+	<remarks>
+ Creado por: Carlos Domínguez Lara
+ Fecha: 19/10/2010 
+ Modificado: 19/10/2010
+ </remarks>
+</member><member name="M:SSLogica.MultiUsuario.registrar(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.Int32)">
+	<summary>
+ Registra un nuevo usuario a la base de datos.
+ </summary>
+	<param name="pcedula">Cédula del usuario</param>
+	<param name="pclave">Contrasenna que se le asigna al usuario</param>
+	<param name="pcodigoDep">Código del departamento al que se asingo el usuario</param>
+	<param name="pcodigoRol">Código del rol que se le asigno al usuario</param>
+	<param name="pcorreo">Correo electrónico del usuario</param>
+	<param name="pnombre">Nombre del usuario</param>
+	<param name="pnombreUsuario">Nombre usuario que se le asignara para ser reconocido en la aplicación</param>
+	<param name="pprimerApellido">Primer apellido del usuario</param>
+	<param name="psegundoApellido">Segundo apellido del usuario</param>
+	<returns>El objeto Usuario que se registro</returns>
+	<exception cref="T:System.Data.SqlClient.SqlException">Error con la base de datos</exception>
+</member><member name="M:SSLogica.MultiUsuario.buscarPorId(System.String)">
+	<summary>
+ Busca un usuario por su id.
+ </summary>
+	<param name="pid">Identificacion que se le asigna al usuario en la base de datos</param>
+	<returns>El objeto usuario que se encontro</returns>
+	<exception cref="T:System.Data.SqlClient.SqlException">Error con la base de datos</exception>
+</member><member name="M:SSLogica.MultiUsuario.buscar(System.String)">
+	<summary>
+ Busca los usuarios por varios criterios.
+ </summary>
+	<param name="pcriterio">Criterio de busqueda puede ser: nombre, cédula, apellido, rol, nombre administrador</param>
+	<returns>Un List(Of Usuario) con los resultados de la busqueda</returns>
+	<exception cref="T:System.Data.SqlClient.SqlException">Error con la base de datos</exception>
+</member><member name="M:SSLogica.MultiUsuario.cargarUsuario(System.Data.IDataReader)">
+	<summary>
+ Ayuda al multi a cargar los usuarios.
+ </summary>
+	<param name="dr">Resultado de la sentencia Sql</param>
+	<returns>Un objeto Usuario</returns>
+	<exception cref="T:System.Data.SqlClient.SqlException">Error con la base de datos</exception>
+</member><member name="M:SSLogica.MultiUsuario.encriptarContrasenna(System.String)">
+	<summary>
+ Metodo que realiza la encriptación de la contraseña utilizando MD5
+ </summary>
+	<param name="p_contrasenna">Contraseña del Usuario: String</param>
+	<returns>Contraseña encriptada: String</returns>
+	<remarks>Creado por:  Carlos Dominguez Lara , Fecha: 21/10/2010, Modificado: 21/19/2010</remarks>
+</member><member name="M:SSLogica.MultiUsuario.modificar(SSLogica.Usuario)">
+	<summary>
+ Modifica los datos de un usuario
+ </summary>
+	<param name="pusuario">Objeto usuario que se desee modificar</param>
+	<exception cref="T:System.Data.SqlClient.SqlException">Error con la base de datos</exception>
+</member><member name="M:SSLogica.MultiUsuario.eliminar(SSLogica.Usuario)">
+	<summary>
+ Elimina un usuario de la base de datos
+ </summary>
+	<param name="pusuario">Objeto usuario que se desee eliminar</param>
+	<exception cref="T:System.Data.SqlClient.SqlException">Error con la base de datos</exception>
+</member><member name="M:SSLogica.MultiUsuario.comprobarBDSurveySystem">
+	<summary>
+ Comprobar si la base de datos BDSurveySystem existe en el servidor
+ </summary>
+	<exception cref="T:System.Data.SqlClient.SqlException">Error al conectar con la base de datos</exception>
+</member><member name="M:SSLogica.MultiUsuario.login(System.String,System.String)">
+	<summary>
+ login
+ </summary>
+	<param name="pusuario">nombre de usuario </param>
+	<param name="pcontrasenna">contrasenna de usuario del sistema</param>
+	<returns name="usuario">objeto usuario</returns>
+	<remarks>Creado por: Esteban Lopez, Creado: 24/10/2010, Modificado:  </remarks>
+</member><member name="M:SSLogica.MultiUsuario.cargarUsuarioPorLogin(System.String)">
+	<summary>
+ cargarUsuarioPorLogin
+ </summary>
+	<param name="pusuario">nombre de usuario </param>
+	<returns name="usuario">objeto usuario</returns>
+	<remarks>Creado por: Esteban Lopez, Creado: 24/10/2010, Modificado:  </remarks>
+</member><member name="M:SSLogica.MultiUsuario.modificarContrasenna(SSLogica.Usuario)">
+	<summary>
+ ModificarContrasenna
+ </summary>
+	<param name="pusuario">objeto usuario </param>
+	<remarks>Creado por: Esteban Lopez, Creado: 24/10/2010, Modificado:  </remarks>
+</member><member name="T:SSLogica.MultiUsuario">
+	<summary>
+ Clase MultiUsuario
+ </summary>
+	<remarks>
+ Corregida por: Carlos Domínguez Lara
+ Fecha: 21/10/2010 
+ Modificado: 21/10/2010 06:08 p.m
+ </remarks>
+</member><member name="P:SSLogica.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:SSLogica.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:SSLogica.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:SSLogica.MultiContacto.buscarContactosCriterio(System.String)">
+	<summary>
+ buscarDepartamentosPorCodigo
+ </summary>
+	<param name="pcriterio">criterio de busqueda </param>
+	<returns name="lista contactos">resultado de la lista de contacto que se buscaron</returns>
+	<remarks>Creado por: Esteban Lopez, Creado: 03/12/2010, Modificado:  </remarks>
+</member><member name="M:SSLogica.MultiContacto.buscarPorEjemplar(System.String)">
+	<summary>
+ Busca un contacto por el ejemplar al que pertenece.
+ </summary>
+	<param name="pcodigoEjemplar">Identificacion que se le asigna al usuario en la base de datos</param>
+	<returns>El objeto Contacto que se encontro</returns>
+	<exception cref="T:System.Data.SqlClient.SqlException">Error con la base de datos</exception>
+</member><member name="M:SSLogica.MultiEjemplar.cargarEjemplar(System.Data.IDataReader)">
+	<summary>
+ Ayuda al multi a cargar los ejemplares''' <summary>
+ Ayuda al multi a cargar los productos
+ </summary>
+	</summary>
+</member><member name="M:SSLogica.MultiEjemplar.obtenerEjemplaresEncuesta(System.Int32)">
+	<summary>
+ Obtiene los ejemplares de una encuesta.
+ </summary>
+	<param name="pcodigoEncuesta">Codigo de la encuesta</param>
+	<returns>Un List(Of Ejemplares) Con todos los Ejemplares encontrados</returns>
+</member><member name="T:SSLogica.MultiEjemplar">
+	<summary>
+ Clase MultiEjemplar
+ </summary>
+	<remarks>
+ Creado por: Carlos Domínguez Lara
+ Modificado: 19/11/2010
+ </remarks>
+</member><member name="P:SSLogica.InstitucionInteresada.nombre">
+	<summary>
+ Propiedad del nombre
+ </summary>
+	<value>_nombre</value>
+	<returns>Nombre de la institución</returns>
+</member><member name="P:SSLogica.InstitucionInteresada.direccion">
+	<summary>
+ Propiedad de la direccion
+ </summary>
+	<value>_direccion</value>
+	<returns>Dirección física de la institución</returns>
+</member><member name="P:SSLogica.InstitucionInteresada.telefono">
+	<summary>
+ Propiedad del teléfono
+ </summary>
+	<value>_telefono</value>
+	<returns>Teléfono de la institución</returns>
+</member><member name="M:SSLogica.MultiCuestionario.agregarPreguntaACuestionario(System.Int32,System.Int32)">
+	<summary>Realiza la asignación de una pregunta a un cuestionario</summary>
+	<param name="ppregunta">Código de la pregunta que se agregará</param>
+	<param name="pencuesta">Código de la encuesta a la que pertenecerá la pregunta</param>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 16-11-2010
+ Última modificacion: 16-11-2010
+ </remarks>
+</member><member name="M:SSLogica.MultiCuestionario.eliminarPreguntaDeCuestionario(System.Int32,System.Int32)">
+	<summary>Eliminar la asociacion de una pregunta con el cuestionario</summary>
+	<param name="ppregunta">Código de la pregunta a la que está relacionado</param>
+	<param name="pcodCuestionario">Código del cuestionario</param>
+	<exception cref="T:System.Data.SqlClient.SqlException">Se lanza cuando hay errores en la inserción de los datos</exception>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 23-10-2010
+ Última modificacion: 24-10-2010
+ </remarks>
+</member><member name="M:SSLogica.MultiCuestionario.crearCuestionario(System.Int32)">
+	<summary>Crear cuestionario de encuesta</summary>
+	<param name="pcodEncuesta">Código de la encuesta a la que pertenece el cuestionario</param>
+	<exception cref="T:System.Data.SqlClient.SqlException">Se lanza cuando hay errores en la inserción de los datos</exception>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 23-10-2010
+ Última modificacion: 24-10-2010
+ </remarks>
+</member><member name="M:SSLogica.MultiPregunta.preguntasListarPorEncuesta(System.Int32)">
+	<summary>
+ Este método retorna todos los objetos Pregunta asociados a una encuesta donde las preguntas sean de tipo cerradas.
+ </summary>
+	<param name="pidEncuesta">ID de la encuesta</param>
+	<returns>Lista de preguntas de la encuesta</returns>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 12-11-2010
+ Última modificación: 12-11-2010
+ </remarks>
+</member><member name="M:SSLogica.MultiPregunta.esModificable(System.Int32)">
+	<summary>
+ Verifica si la pregunta ya está asociada a algun cuestionario.
+ </summary>
+	<param name="pidPregunta">ID de la pregunta</param>
+	<returns>Si es modificable o no</returns>
+	<remarks>
+ Autor: Elias Gomez Castro
+ Versión: 1.0
+ fecha de Creacion: 23-11-2010
+ Última modificacion: 23-11-2010
+ </remarks>
+</member><member name="M:SSLogica.MultiPregunta.modificar(SSLogica.Pregunta)">
+	<summary>
+ Modifica una pregunta en el sistema a partir de un objeto Pregunta.
+ </summary>
+	<param name="ppregunta">Objeto pregunta</param>
+	<remarks>
+ Autor: Elias Gomez Castro
+ Versión: 1.0
+ fecha de Creacion: 23-11-2010
+ Última modificacion: 23-11-2010
+ </remarks>
+</member><member name="M:SSLogica.MultiPregunta.eliminar(System.Int32)">
+	<summary>
+ Elimina una pregunta del sistema.
+ </summary>
+	<param name="pidPregunta">id de la pregunta</param>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 21-11-2010
+ Última modificación: 21-11-2010
+ </remarks>
+</member><member name="M:SSLogica.MultiPregunta.sePuedeELiminar(System.Int32)">
+	<summary>
+ Este metodo devuelve true si se puede modificar la pregunta indicada
+ </summary>
+	<param name="pcodPregunta">Codigo de la pregunta</param>
+	<returns>Lista de preguntas pertenecientes a un tema</returns>
+	<remarks>
+ Autor: Jose Fallas Mena
+ Versión: 1.0
+ Fecha de creación: 16-11-2010
+ Última modificación: 16-11-2010
+ </remarks>
+</member><member name="M:SSLogica.MultiPregunta.listarPreguntasDeEncuesta(System.Int32)">
+	<summary>
+ Este método retorna todos los objetos Pregunta asociados a una encuesta donde las preguntas sean de tipo cerradas.
+ </summary>
+	<param name="pidEncuesta">ID de la encuesta</param>
+	<returns>Lista de preguntas de la encuesta</returns>
+	<remarks>
+ Autor: Elias Gomez 
+ Versión: 1.0
+ Fecha de creación: 12-11-2010
+ Última modificación: 12-11-2010
+ </remarks>
+</member><member name="M:SSLogica.MultiPregunta.preguntaRegistrar(System.String,System.Int32,System.Int32)">
+	<summary>Registro de una pregunta</summary>
+	<param name="pdescripcion">Texto de la pregunta</param>
+	<param name="pidTema">Codigo del tema al que está asociado</param>
+	<param name="pidTipoPregunta">Codigo del tipo de pregunta</param>
+	<exception cref="T:System.Data.SqlClient.SqlException">Se lanza cuando hay errores en la inserción de los datos</exception>
+	<remarks>
+ Autor: Jose Eduardo Fallas
+ Versión: 1.0
+ fecha de Creacion: 23-10-2010
+ Última modificacion: 24-10-2010
+ </remarks>
+</member><member name="M:SSLogica.MultiPregunta.listar">
+	<summary>
+ Este método retorna todas las preguntas existentes.
+ </summary>
+	<returns>Lista de preguntas pertenecientes a un tema</returns>
+	<remarks>
+ Autor: Jose Fallas Mena
+ Versión: 1.0
+ Fecha de creación: 16-11-2010
+ Última modificación: 16-11-2010
+ </remarks>
+</member><member name="M:SSLogica.MultiPregunta.preguntasListarPorTema(System.String,System.String)">
+	<summary>
+ Este método retorna todos los objetos Pregunta segun tema
+ </summary>
+	<param name="ptema">Tema de las preguntas</param>
+	<returns>Lista de preguntas pertenecientes a un tema</returns>
+	<remarks>
+ Autor: Jose Fallas Mena
+ Versión: 1.0
+ Fecha de creación: 16-11-2010
+ Última modificación: 16-11-2010
+ </remarks>
+</member>
+</members>
+</doc>
