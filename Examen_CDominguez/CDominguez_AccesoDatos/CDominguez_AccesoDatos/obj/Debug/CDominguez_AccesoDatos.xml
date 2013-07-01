@@ -1,0 +1,59 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+CDominguez_AccesoDatos
+</name>
+</assembly>
+<members>
+<member name="M:CDominguez_AccesoDatos.Parameters.#ctor">
+	<summary>
+ Constructor sin parametros
+ </summary>
+</member><member name="M:CDominguez_AccesoDatos.Parameters.#ctor(System.String,System.Object)">
+	<summary>
+ Constructor con parametros
+ </summary>
+	<param name="pName">Nombre del parametro</param>
+	<param name="pData">Valor del parametro</param>
+</member><member name="P:CDominguez_AccesoDatos.Parameters.Name">
+	<summary>
+ Propiedad para el nombre del parametro
+ </summary>
+</member><member name="P:CDominguez_AccesoDatos.Parameters.Data">
+	<summary>
+ Valor del parametro
+ </summary>
+</member><member name="P:CDominguez_AccesoDatos.AccesoDatos.Conexion">
+	<summary>
+ Conexion a la base de datos
+ </summary>
+	<returns>Un String con la conexion de la base de datos</returns>
+</member><member name="M:CDominguez_AccesoDatos.AccesoDatos.getConnection">
+	<summary>
+ Devuelve la conexion a la base de datos
+ </summary>
+	<returns>Un String con la conexion de la base de datos</returns>
+</member><member name="M:CDominguez_AccesoDatos.AccesoDatos.executeSQL(System.String,System.Data.IDbConnection,CDominguez_AccesoDatos.Parameters[])">
+	<summary>
+ Ejecuta una sentencia SQL en la base de datos
+ </summary>
+	<param name="pConexion">Conexion a la base de datos</param>
+	<param name="pParameters">Parametros para cambiar en la sentencia</param>
+	<param name="pSQL">Scrips SQL que se ejecutara</param>
+</member><member name="M:CDominguez_AccesoDatos.AccesoDatos.executeSQL(System.String,System.String)">
+	<summary>
+ Ejecuta una sentencia en la base de datos
+ </summary>
+</member><member name="T:CDominguez_AccesoDatos.AccesoDatos">
+	<summary>
+ Clase AccesoDatos
+ </summary>
+	<remarks>
+ Creado por: Carlos Domínguez Lara
+ Fecha: 25/11/2010 8:56 a.m
+ Modificado: 25/11/2010 8:56 a.m
+ </remarks>
+</member>
+</members>
+</doc>

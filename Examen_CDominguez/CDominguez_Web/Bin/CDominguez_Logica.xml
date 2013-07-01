@@ -1,0 +1,269 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+CDominguez_Logica
+</name>
+</assembly>
+<members>
+<member name="M:CDominguez_Logica.Gestor.registrarEmpleado(System.String,System.String,System.String,System.String,System.Int32,System.String,System.String)">
+	<summary>
+ Registra un nuevo empleado al sistema.
+ </summary>
+	<param name="pidentificacion">Cédula del Empleado</param>
+	<param name="pnombre">Nombre del Empleado</param>
+	<param name="papellidos">Apellidos del Empleado</param>
+	<param name="ptelefono">Teléfono del Empleado</param>
+	<param name="pdireccion">Dirección del Empleado</param>
+	<param name="ppuesto">Puesto que se le asignara al empleado</param>
+</member><member name="M:CDominguez_Logica.Gestor.modificarEmpleado(System.Int32,System.String,System.String,System.String,System.String,System.Int32,System.String,System.String)">
+	<summary>
+ Modifica los datos de un empleado.
+ </summary>
+	<param name="pid">Id del empleado</param>
+	<param name="pidentificacion">Nueva Cédula del Empleado</param>
+	<param name="pnombre">Nueva Nombre del Empleado</param>
+	<param name="papellidos">Nueva Apellidos del Empleado</param>
+	<param name="ptelefono">Nueva Teléfono del Empleado</param>
+	<param name="pdireccion">Nueva Dirección del Empleado</param>
+	<param name="ppuesto">Nueva Puesto que se le asignara al empleado</param>
+</member><member name="M:CDominguez_Logica.Gestor.eliminarEmpleado(System.Int32)">
+	<summary>
+ Elimina un usuario del sistema.
+ </summary>
+	<param name="pid">
+ Es la identificación que se le pone al usuario en la base de datos..
+ </param>
+</member><member name="M:CDominguez_Logica.Gestor.obtenerDatosEmpleado(System.Int32)">
+	<summary>
+ Obtiene los datos que se mostraran en la interfaz de un empleado
+ </summary>
+	<param name="pidEmpleado">
+ Es el id que se le pone al empleado en la base de datos.
+ </param>
+	<returns>Un Array de String</returns>
+</member><member name="M:CDominguez_Logica.Gestor.buscarEmpleadosPorCriterio(System.String)">
+	<summary>
+ Busca usuarios por aproximacion de: Nombre, Identificacion 
+ </summary>
+	<param name="pcriterio">
+ Es el criterio de busqueda que va utilizar el metodo para encotrar los Empleados, 
+ puede ser por: Nombre o Identificación.
+ </param>
+	<returns>List(Of Array) con los empleados encontrados</returns>
+</member><member name="M:CDominguez_Logica.Gestor.cargarDepartamentos">
+	<summary>
+ Carga los departamentos
+ </summary>
+	<returns name="datosDepartamento">datosDepartamento</returns>
+	<remarks>Creado por: Carlos Domínguez, Creado: 25/11/2010 8:56 a.m, Modificado:  </remarks>
+</member><member name="T:CDominguez_Logica.Gestor">
+	<summary>
+ Clase Gestor
+ </summary>
+	<remarks>
+ Creado por: Carlos Domínguez Lara
+ Fecha: 25/11/2010 8:56 a.m
+ Modificado: 25/11/2010 8:56 a.m
+ </remarks>
+</member><member name="M:CDominguez_Logica.Departamento.#ctor(System.Int32,System.String)">
+	<summary>
+ Constructor de la clase Departamento
+ </summary>
+</member><member name="P:CDominguez_Logica.Departamento.Codigo">
+	<summary>
+ Propiedad del Codigo
+ </summary>
+	<value>Codigo</value>
+	<returns>Codigo del Departamento: Integer</returns>
+</member><member name="P:CDominguez_Logica.Departamento.Nombre">
+	<summary>
+ Propiedad del nombre
+ </summary>
+	<value>Nombre</value>
+	<returns>Nombre del departamento: String</returns>
+</member><member name="P:CDominguez_Logica.Departamento.Encargado">
+	<summary>
+ Propiedad para el Encargado
+ </summary>
+	<value>Encargado</value>
+	<returns>Encargado para el Departamento: Empleado</returns>
+</member><member name="T:CDominguez_Logica.Departamento">
+	<summary>
+ Clase Departamento
+ </summary>
+	<remarks>
+ Creado por: Carlos Domínguez Lara
+ Fecha: 25/11/2010 8:56 a.m
+ Modificado: 25/11/2010 8:56 a.m
+ </remarks>
+</member><member name="M:CDominguez_Logica.PersistenciaDepartamento.buscarPorIdEmpleado(System.Int32)">
+	<summary>
+ Busca un Departamento por el id de un Empleado.
+ </summary>
+	<param name="pidEmpleado">Id que se le asigna al Empleado en la base de datos</param>
+	<returns>El objeto Departamento</returns>
+	<exception cref="T:System.Exception">Error con la base de datos</exception>
+</member><member name="M:CDominguez_Logica.PersistenciaDepartamento.buscarPorCodigo(System.Int32)">
+	<summary>
+ Busca un departamento por su codigo
+ </summary>
+	<param name="pcodigo">pcodigo</param>
+	<returns name="departamento">Departamento que encontro</returns>
+	<remarks>Creado por: Carlos Domínguez  </remarks>
+</member><member name="M:CDominguez_Logica.PersistenciaDepartamento.listarDepartamentos">
+	<summary>
+ listarDepartamentos
+ </summary>
+	<returns name="listaDepartamentos">lista con los departamentos</returns>
+	<remarks>Creado por: Carlos Domínguez, Creado: 25/11/2010 8:56 a.m  </remarks>
+</member><member name="M:CDominguez_Logica.PersistenciaDepartamento.cargarDepartamento(System.Data.IDataReader)">
+	<summary>
+ Ayuda a la persistencia a cargar los departamentos.
+ </summary>
+	<param name="dr">Resultado de la sentencia Sql</param>
+	<returns>Un objeto Departamento</returns>
+</member><member name="T:CDominguez_Logica.PersistenciaDepartamento">
+	<summary>
+ Clase PersistenciaEmpleado
+ </summary>
+	<remarks>
+ Creado por: Carlos Domínguez Lara
+ Fecha: 25/11/2010 8:56 a.m
+ Modificado: 25/11/2010 8:56 a.m
+ </remarks>
+</member><member name="M:CDominguez_Logica.Empleado.#ctor(System.Int32,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ Constructor de la clase Empleado
+ </summary>
+	<param name="pid">Id que se asigna al empleado en la base de datos</param>
+	<param name="pidentificacion">Cédula del Empleado</param>
+	<param name="pnombre">Nombre del Empleado</param>
+	<param name="papellidos">Apellidos del Empleado</param>
+	<param name="ptelefono">Teléfono del Empleado</param>
+	<param name="pdireccion">Dirección del Empleado</param>
+	<param name="ppuesto">Puesto que se le asignara al empleado</param>
+</member><member name="P:CDominguez_Logica.Empleado.Id">
+	<summary>
+ Propiedad del Id
+ </summary>
+	<value>Id</value>
+	<returns>id del Empleado: Integer</returns>
+</member><member name="P:CDominguez_Logica.Empleado.Identificacion">
+	<summary>
+ Propiedad para la identificación
+ </summary>
+	<value>identificación</value>
+	<returns>identificación del Empleado: String</returns>
+</member><member name="P:CDominguez_Logica.Empleado.Nombre">
+	<summary>
+ Propiedad del nombre
+ </summary>
+	<value>Nombre</value>
+	<returns>Nombre del Empleado: String</returns>
+</member><member name="P:CDominguez_Logica.Empleado.Apellidos">
+	<summary>
+ Propiedad para los apellidos
+ </summary>
+	<value>apellidos</value>
+	<returns>Apellidos del Empleado: String</returns>
+</member><member name="P:CDominguez_Logica.Empleado.Telefono">
+	<summary>
+ Propiedad para el teléfono
+ </summary>
+	<value>Teléfono</value>
+	<returns>Teléfono del Empleado: String</returns>
+</member><member name="P:CDominguez_Logica.Empleado.Departamento">
+	<summary>
+ Propiedad para el departamento al que pertenece el Empleado
+ </summary>
+	<value>Departamento</value>
+	<returns>Departamento del Empleado: Departamento</returns>
+</member><member name="P:CDominguez_Logica.Empleado.Direccion">
+	<summary>
+ Propiedad para la dirección
+ </summary>
+	<value>Dirección</value>
+	<returns>Dirección del Empleado: String</returns>
+</member><member name="P:CDominguez_Logica.Empleado.Puesto">
+	<summary>
+ Propiedad para el puesto
+ </summary>
+	<value>Puesto</value>
+	<returns>Puesto del Empleado: String</returns>
+</member><member name="T:CDominguez_Logica.Empleado">
+	<summary>
+ Clase Empleado
+ </summary>
+	<remarks>
+ Creado por: Carlos Domínguez Lara
+ Fecha: 25/11/2010 8:56 a.m
+ Modificado: 25/11/2010 8:56 a.m
+ </remarks>
+</member><member name="M:CDominguez_Logica.PersistenciaEmpleado.registrar(System.String,System.String,System.String,System.String,System.Int32,System.String,System.String)">
+	<summary>
+ Registra un nuevo empleado a la base de datos.
+ </summary>
+	<param name="pidentificacion">Cédula del Empleado</param>
+	<param name="pnombre">Nombre del Empleado</param>
+	<param name="papellidos">Apellidos del Empleado</param>
+	<param name="ptelefono">Teléfono del Empleado</param>
+	<param name="pdireccion">Dirección del Empleado</param>
+	<param name="ppuesto">Puesto que se le asignara al empleado</param>
+	<exception cref="T:System.Data.SqlClient.SqlException">Error con la base de datos</exception>
+</member><member name="M:CDominguez_Logica.PersistenciaEmpleado.modificar(CDominguez_Logica.Empleado)">
+	<summary>
+ Modificar un empleado de la base de datos.
+ </summary>
+	<param name="pobjEmpleado">El objeto Empleado que se desea modificar</param>
+	<exception cref="T:System.Data.SqlClient.SqlException">Error con la base de datos</exception>
+</member><member name="M:CDominguez_Logica.PersistenciaEmpleado.eliminar(CDominguez_Logica.Empleado)">
+	<summary>
+ Elimina un empleado de la base de datos
+ </summary>
+	<param name="pempleado">departamento</param>
+	<remarks>Creado por: Carlos Dominguez </remarks>
+</member><member name="M:CDominguez_Logica.PersistenciaEmpleado.buscarPorId(System.String)">
+	<summary>
+ Busca un empleado por su id.
+ </summary>
+	<param name="pid">Identificacion que se le asigna al empleado en la base de datos</param>
+	<returns>El objeto Empleado que se encontro</returns>
+	<exception cref="T:System.Data.SqlClient.SqlException">Error con la base de datos</exception>
+</member><member name="M:CDominguez_Logica.PersistenciaEmpleado.buscarPorCodDep(System.Int32)">
+	<summary>
+ Busca un Empleado por el Codigo de un Departamento.
+ </summary>
+	<param name="pcodDepartamento">Codigo que se le asigna al Departamento en la base de datos</param>
+	<returns>El objeto Empleado</returns>
+	<exception cref="T:System.Exception">Error con la base de datos</exception>
+</member><member name="M:CDominguez_Logica.PersistenciaEmpleado.buscarPorCriterio(System.String)">
+	<summary>
+ Lista los Empleados segun el criterio de busqueda que se le envie.
+ </summary>
+	<param name="pcriterio">Criterio de busqueda que se utilizara</param>
+	<returns>Un List(Of Empleado) Con todos los Empleados encontrados</returns>
+</member><member name="M:CDominguez_Logica.PersistenciaEmpleado.listarEmpleados">
+	<summary>
+ Lista todos los Empleados registrados registrados en la base de datos.
+ </summary>
+	<returns>Un List(Of Empleado)</returns>
+	<exception cref="T:System.Data.SqlClient.SqlException">Error con la base de datos</exception>
+</member><member name="M:CDominguez_Logica.PersistenciaEmpleado.cargarEmpleado(System.Data.IDataReader)">
+	<summary>
+ Ayuda a la persistencia a cargar los empleados.
+ </summary>
+	<param name="dr">Resultado de la sentencia Sql</param>
+	<returns>Un objeto Empleado</returns>
+</member><member name="T:CDominguez_Logica.PersistenciaEmpleado">
+	<summary>
+ Clase PersistenciaEmpleado
+ </summary>
+	<remarks>
+ Creado por: Carlos Domínguez Lara
+ Fecha: 25/11/2010 8:56 a.m
+ Modificado: 25/11/2010 8:56 a.m
+ </remarks>
+</member>
+</members>
+</doc>

@@ -1,0 +1,30 @@
+G:\ExamenClasesTecnicas\CDominguez_AccesoDatos\CDominguez_AccesoDatos\bin\Debug\CDominguez_AccesoDatos.dll.config
+G:\ExamenClasesTecnicas\CDominguez_AccesoDatos\CDominguez_AccesoDatos\bin\Debug\CDominguez_AccesoDatos.dll
+G:\ExamenClasesTecnicas\CDominguez_AccesoDatos\CDominguez_AccesoDatos\bin\Debug\CDominguez_AccesoDatos.pdb
+G:\ExamenClasesTecnicas\CDominguez_AccesoDatos\CDominguez_AccesoDatos\bin\Debug\CDominguez_AccesoDatos.xml
+G:\ExamenClasesTecnicas\CDominguez_AccesoDatos\CDominguez_AccesoDatos\obj\Debug\ResolveAssemblyReference.cache
+G:\ExamenClasesTecnicas\CDominguez_AccesoDatos\CDominguez_AccesoDatos\obj\Debug\CDominguez_AccesoDatos.Resources.resources
+G:\ExamenClasesTecnicas\CDominguez_AccesoDatos\CDominguez_AccesoDatos\obj\Debug\CDominguez_AccesoDatos.vbproj.GenerateResource.Cache
+G:\ExamenClasesTecnicas\CDominguez_AccesoDatos\CDominguez_AccesoDatos\obj\Debug\CDominguez_AccesoDatos.dll
+G:\ExamenClasesTecnicas\CDominguez_AccesoDatos\CDominguez_AccesoDatos\obj\Debug\CDominguez_AccesoDatos.xml
+G:\ExamenClasesTecnicas\CDominguez_AccesoDatos\CDominguez_AccesoDatos\obj\Debug\CDominguez_AccesoDatos.pdb
+C:\Users\Krlos\Desktop\Examen_CDominguez\CDominguez_AccesoDatos\CDominguez_AccesoDatos\bin\Debug\CDominguez_AccesoDatos.dll.config
+C:\Users\Krlos\Desktop\Examen_CDominguez\CDominguez_AccesoDatos\CDominguez_AccesoDatos\bin\Debug\CDominguez_AccesoDatos.dll
+C:\Users\Krlos\Desktop\Examen_CDominguez\CDominguez_AccesoDatos\CDominguez_AccesoDatos\bin\Debug\CDominguez_AccesoDatos.pdb
+C:\Users\Krlos\Desktop\Examen_CDominguez\CDominguez_AccesoDatos\CDominguez_AccesoDatos\bin\Debug\CDominguez_AccesoDatos.xml
+C:\Users\Krlos\Desktop\Examen_CDominguez\CDominguez_AccesoDatos\CDominguez_AccesoDatos\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Krlos\Desktop\Examen_CDominguez\CDominguez_AccesoDatos\CDominguez_AccesoDatos\obj\Debug\CDominguez_AccesoDatos.Resources.resources
+C:\Users\Krlos\Desktop\Examen_CDominguez\CDominguez_AccesoDatos\CDominguez_AccesoDatos\obj\Debug\CDominguez_AccesoDatos.vbproj.GenerateResource.Cache
+C:\Users\Krlos\Desktop\Examen_CDominguez\CDominguez_AccesoDatos\CDominguez_AccesoDatos\obj\Debug\CDominguez_AccesoDatos.dll
+C:\Users\Krlos\Desktop\Examen_CDominguez\CDominguez_AccesoDatos\CDominguez_AccesoDatos\obj\Debug\CDominguez_AccesoDatos.xml
+C:\Users\Krlos\Desktop\Examen_CDominguez\CDominguez_AccesoDatos\CDominguez_AccesoDatos\obj\Debug\CDominguez_AccesoDatos.pdb
+G:\3_Cuatrimestre\Proyecto 2\Clases tecnicas\Examen_CDominguez\CDominguez_AccesoDatos\CDominguez_AccesoDatos\bin\Debug\CDominguez_AccesoDatos.dll.config
+G:\3_Cuatrimestre\Proyecto 2\Clases tecnicas\Examen_CDominguez\CDominguez_AccesoDatos\CDominguez_AccesoDatos\bin\Debug\CDominguez_AccesoDatos.dll
+G:\3_Cuatrimestre\Proyecto 2\Clases tecnicas\Examen_CDominguez\CDominguez_AccesoDatos\CDominguez_AccesoDatos\bin\Debug\CDominguez_AccesoDatos.pdb
+G:\3_Cuatrimestre\Proyecto 2\Clases tecnicas\Examen_CDominguez\CDominguez_AccesoDatos\CDominguez_AccesoDatos\bin\Debug\CDominguez_AccesoDatos.xml
+G:\3_Cuatrimestre\Proyecto 2\Clases tecnicas\Examen_CDominguez\CDominguez_AccesoDatos\CDominguez_AccesoDatos\obj\Debug\ResolveAssemblyReference.cache
+G:\3_Cuatrimestre\Proyecto 2\Clases tecnicas\Examen_CDominguez\CDominguez_AccesoDatos\CDominguez_AccesoDatos\obj\Debug\CDominguez_AccesoDatos.Resources.resources
+G:\3_Cuatrimestre\Proyecto 2\Clases tecnicas\Examen_CDominguez\CDominguez_AccesoDatos\CDominguez_AccesoDatos\obj\Debug\CDominguez_AccesoDatos.vbproj.GenerateResource.Cache
+G:\3_Cuatrimestre\Proyecto 2\Clases tecnicas\Examen_CDominguez\CDominguez_AccesoDatos\CDominguez_AccesoDatos\obj\Debug\CDominguez_AccesoDatos.dll
+G:\3_Cuatrimestre\Proyecto 2\Clases tecnicas\Examen_CDominguez\CDominguez_AccesoDatos\CDominguez_AccesoDatos\obj\Debug\CDominguez_AccesoDatos.xml
+G:\3_Cuatrimestre\Proyecto 2\Clases tecnicas\Examen_CDominguez\CDominguez_AccesoDatos\CDominguez_AccesoDatos\obj\Debug\CDominguez_AccesoDatos.pdb

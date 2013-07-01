@@ -1,0 +1,18 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+CDominguez_WinForm
+</name>
+</assembly>
+<members>
+<member name="M:CDominguez_WinForm.MantenimientoEmpleado.cargarDatos(System.Collections.Generic.List{System.Array},System.Windows.Forms.DataGridView)">
+	<summary>
+ Metodo que carga los datos de una lista en un DataGridView
+ </summary>
+	<param name="p_lista"></param>
+	<param name="p_componente"></param>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

@@ -1,0 +1,36 @@
+G:\ExamenClasesTecnicas\CDominguez_Logica\CDominguez_Logica\obj\Debug\ResolveAssemblyReference.cache
+G:\ExamenClasesTecnicas\CDominguez_Logica\CDominguez_Logica\obj\Debug\CDominguez_Logica.Resources.resources
+G:\ExamenClasesTecnicas\CDominguez_Logica\CDominguez_Logica\obj\Debug\CDominguez_Logica.vbproj.GenerateResource.Cache
+G:\ExamenClasesTecnicas\CDominguez_Logica\CDominguez_Logica\bin\Debug\CDominguez_Logica.dll
+G:\ExamenClasesTecnicas\CDominguez_Logica\CDominguez_Logica\bin\Debug\CDominguez_Logica.pdb
+G:\ExamenClasesTecnicas\CDominguez_Logica\CDominguez_Logica\bin\Debug\CDominguez_Logica.xml
+G:\ExamenClasesTecnicas\CDominguez_Logica\CDominguez_Logica\bin\Debug\CDominguez_AccesoDatos.dll
+G:\ExamenClasesTecnicas\CDominguez_Logica\CDominguez_Logica\bin\Debug\CDominguez_AccesoDatos.pdb
+G:\ExamenClasesTecnicas\CDominguez_Logica\CDominguez_Logica\bin\Debug\CDominguez_AccesoDatos.xml
+G:\ExamenClasesTecnicas\CDominguez_Logica\CDominguez_Logica\obj\Debug\CDominguez_Logica.dll
+G:\ExamenClasesTecnicas\CDominguez_Logica\CDominguez_Logica\obj\Debug\CDominguez_Logica.xml
+G:\ExamenClasesTecnicas\CDominguez_Logica\CDominguez_Logica\obj\Debug\CDominguez_Logica.pdb
+C:\Users\Krlos\Desktop\Examen_CDominguez\CDominguez_Logica\CDominguez_Logica\bin\Debug\CDominguez_Logica.dll
+C:\Users\Krlos\Desktop\Examen_CDominguez\CDominguez_Logica\CDominguez_Logica\bin\Debug\CDominguez_Logica.pdb
+C:\Users\Krlos\Desktop\Examen_CDominguez\CDominguez_Logica\CDominguez_Logica\bin\Debug\CDominguez_Logica.xml
+C:\Users\Krlos\Desktop\Examen_CDominguez\CDominguez_Logica\CDominguez_Logica\bin\Debug\CDominguez_AccesoDatos.dll
+C:\Users\Krlos\Desktop\Examen_CDominguez\CDominguez_Logica\CDominguez_Logica\bin\Debug\CDominguez_AccesoDatos.pdb
+C:\Users\Krlos\Desktop\Examen_CDominguez\CDominguez_Logica\CDominguez_Logica\bin\Debug\CDominguez_AccesoDatos.xml
+C:\Users\Krlos\Desktop\Examen_CDominguez\CDominguez_Logica\CDominguez_Logica\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Krlos\Desktop\Examen_CDominguez\CDominguez_Logica\CDominguez_Logica\obj\Debug\CDominguez_Logica.Resources.resources
+C:\Users\Krlos\Desktop\Examen_CDominguez\CDominguez_Logica\CDominguez_Logica\obj\Debug\CDominguez_Logica.vbproj.GenerateResource.Cache
+C:\Users\Krlos\Desktop\Examen_CDominguez\CDominguez_Logica\CDominguez_Logica\obj\Debug\CDominguez_Logica.dll
+C:\Users\Krlos\Desktop\Examen_CDominguez\CDominguez_Logica\CDominguez_Logica\obj\Debug\CDominguez_Logica.xml
+C:\Users\Krlos\Desktop\Examen_CDominguez\CDominguez_Logica\CDominguez_Logica\obj\Debug\CDominguez_Logica.pdb
+G:\3_Cuatrimestre\Proyecto 2\Clases tecnicas\Examen_CDominguez\CDominguez_Logica\CDominguez_Logica\bin\Debug\CDominguez_Logica.dll
+G:\3_Cuatrimestre\Proyecto 2\Clases tecnicas\Examen_CDominguez\CDominguez_Logica\CDominguez_Logica\bin\Debug\CDominguez_Logica.pdb
+G:\3_Cuatrimestre\Proyecto 2\Clases tecnicas\Examen_CDominguez\CDominguez_Logica\CDominguez_Logica\bin\Debug\CDominguez_Logica.xml
+G:\3_Cuatrimestre\Proyecto 2\Clases tecnicas\Examen_CDominguez\CDominguez_Logica\CDominguez_Logica\bin\Debug\CDominguez_AccesoDatos.dll
+G:\3_Cuatrimestre\Proyecto 2\Clases tecnicas\Examen_CDominguez\CDominguez_Logica\CDominguez_Logica\bin\Debug\CDominguez_AccesoDatos.pdb
+G:\3_Cuatrimestre\Proyecto 2\Clases tecnicas\Examen_CDominguez\CDominguez_Logica\CDominguez_Logica\bin\Debug\CDominguez_AccesoDatos.xml
+G:\3_Cuatrimestre\Proyecto 2\Clases tecnicas\Examen_CDominguez\CDominguez_Logica\CDominguez_Logica\obj\Debug\ResolveAssemblyReference.cache
+G:\3_Cuatrimestre\Proyecto 2\Clases tecnicas\Examen_CDominguez\CDominguez_Logica\CDominguez_Logica\obj\Debug\CDominguez_Logica.Resources.resources
+G:\3_Cuatrimestre\Proyecto 2\Clases tecnicas\Examen_CDominguez\CDominguez_Logica\CDominguez_Logica\obj\Debug\CDominguez_Logica.vbproj.GenerateResource.Cache
+G:\3_Cuatrimestre\Proyecto 2\Clases tecnicas\Examen_CDominguez\CDominguez_Logica\CDominguez_Logica\obj\Debug\CDominguez_Logica.dll
+G:\3_Cuatrimestre\Proyecto 2\Clases tecnicas\Examen_CDominguez\CDominguez_Logica\CDominguez_Logica\obj\Debug\CDominguez_Logica.xml
+G:\3_Cuatrimestre\Proyecto 2\Clases tecnicas\Examen_CDominguez\CDominguez_Logica\CDominguez_Logica\obj\Debug\CDominguez_Logica.pdb

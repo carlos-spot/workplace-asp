@@ -1,0 +1,46 @@
+﻿
+/*
+Hoja de Estilo (CSS)
+Creada por: Carlos Dominguez Lara
+Fecha de Creación: 25 de Noviembre del 2010
+Fecha de Modificación: 25 de Noviembre del 2010
+*/
+
+/*Estilo para el cuerpo de la página*/
+body  
+{
+	background-color:Gray; 
+}
+
+/*Div principal.*/
+#Principal {
+	margin: auto; 
+	border-left: thin none #008000; 
+	border-right: thin none #008000; 
+	border-top: thin dotted #008000; 
+	border-bottom: thin dotted #008000; 
+	background-color:#D9FFD9; 
+	width: 983px; 
+	height: 764px; 
+	padding-top: auto; 
+	padding-right: auto; 
+	padding-bottom: auto; 
+	padding-left: auto
+}
+
+
+/*Cabezera de la pagina.*/
+ #Header
+{
+    width: 982px;
+    height: 55px;
+    text-align: center;
+}
+
+/*Fondo para los mensajes de confirmación.*/
+.modalBackgroud
+{ 
+    background-color:Gray;
+    filter: alpha(opacity=50); 
+    opacity: .5
+}
